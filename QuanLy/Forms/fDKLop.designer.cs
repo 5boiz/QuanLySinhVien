@@ -48,7 +48,7 @@ namespace QuanLy.UC_control
             // 
             this.txtNamHoc.Location = new System.Drawing.Point(171, 350);
             this.txtNamHoc.Name = "txtNamHoc";
-            this.txtNamHoc.Size = new System.Drawing.Size(254, 22);
+            this.txtNamHoc.Size = new System.Drawing.Size(278, 22);
             this.txtNamHoc.TabIndex = 75;
             // 
             // label4
@@ -92,7 +92,7 @@ namespace QuanLy.UC_control
             this.lblLop.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLop.Location = new System.Drawing.Point(0, 0);
             this.lblLop.Name = "lblLop";
-            this.lblLop.Size = new System.Drawing.Size(494, 55);
+            this.lblLop.Size = new System.Drawing.Size(530, 55);
             this.lblLop.TabIndex = 71;
             this.lblLop.Text = "Lớp";
             this.lblLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,7 +112,7 @@ namespace QuanLy.UC_control
             this.cbKhoa.FormattingEnabled = true;
             this.cbKhoa.Location = new System.Drawing.Point(171, 233);
             this.cbKhoa.Name = "cbKhoa";
-            this.cbKhoa.Size = new System.Drawing.Size(254, 24);
+            this.cbKhoa.Size = new System.Drawing.Size(278, 24);
             this.cbKhoa.TabIndex = 69;
             // 
             // label2
@@ -129,7 +129,7 @@ namespace QuanLy.UC_control
             // 
             this.txtTenLop.Location = new System.Drawing.Point(171, 173);
             this.txtTenLop.Name = "txtTenLop";
-            this.txtTenLop.Size = new System.Drawing.Size(254, 22);
+            this.txtTenLop.Size = new System.Drawing.Size(278, 22);
             this.txtTenLop.TabIndex = 67;
             // 
             // txtID
@@ -137,7 +137,7 @@ namespace QuanLy.UC_control
             this.txtID.Enabled = false;
             this.txtID.Location = new System.Drawing.Point(171, 109);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(254, 22);
+            this.txtID.Size = new System.Drawing.Size(278, 22);
             this.txtID.TabIndex = 66;
             // 
             // label1
@@ -165,7 +165,7 @@ namespace QuanLy.UC_control
             this.cbGiaoVien.FormattingEnabled = true;
             this.cbGiaoVien.Location = new System.Drawing.Point(171, 294);
             this.cbGiaoVien.Name = "cbGiaoVien";
-            this.cbGiaoVien.Size = new System.Drawing.Size(254, 24);
+            this.cbGiaoVien.Size = new System.Drawing.Size(278, 24);
             this.cbGiaoVien.TabIndex = 76;
             // 
             // fDKLop
@@ -173,7 +173,7 @@ namespace QuanLy.UC_control
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(494, 492);
+            this.ClientSize = new System.Drawing.Size(530, 541);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbGiaoVien);
             this.Controls.Add(this.txtNamHoc);
