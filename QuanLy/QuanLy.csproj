@@ -75,6 +75,12 @@
     <Compile Include="Forms\fDKLop.designer.cs">
       <DependentUpon>fDKLop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fDKNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fDKNguoiDung.designer.cs">
+      <DependentUpon>fDKNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\fDKLop.resx">
       <DependentUpon>fDKLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fDKNguoiDung.resx">
+      <DependentUpon>fDKNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
