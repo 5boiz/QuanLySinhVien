@@ -453,7 +453,7 @@ namespace QuanLy
             this.tabControlSV.Name = "tabControlSV";
             this.tabControlSV.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.tabControlSV.SelectedTabIndex = -1;
-            this.tabControlSV.Size = new System.Drawing.Size(1082, 441);
+            this.tabControlSV.Size = new System.Drawing.Size(1082, 402);
             this.tabControlSV.TabIndex = 1;
             this.tabControlSV.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabControlSV.Text = "tabControl1";
@@ -568,14 +568,14 @@ namespace QuanLy
             this.buttonItem21.SubItemsExpandWidth = 14;
             this.buttonItem21.Text = "<div width=\"70\" align=\"center\">Sinh viên</div>";
             // 
-            // fQuanLySV
+            // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 641);
+            this.ClientSize = new System.Drawing.Size(1090, 602);
             this.Controls.Add(this.tabControlSV);
             this.Controls.Add(this.ribbonControl1);
-            this.Name = "fQuanLySV";
+            this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fQuanLySinhVien_Load);
