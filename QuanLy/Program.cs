@@ -14,11 +14,9 @@ namespace QuanLy
         [STAThread]
         static void Main()
         {
-            Console.WriteLine(Static.mock.Data.users["1"].HoTen);
-            Static.mock.XuatData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fMain());
+            Application.Run(new fLogin());
         }
     }
 }
