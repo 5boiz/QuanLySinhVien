@@ -9,23 +9,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLy.UC_control
+namespace QuanLy
 {
-    public partial class fDKLop : Form
+    public partial class UserTab : Form
     {
-        public fDKLop()
+        public UserTab()
         {
             InitializeComponent();
         }
 
-        private void fDKLop_Load(object sender, EventArgs e)
+
+
+        private void fQuanLySinhVien_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+
+        private void closeButton1_Click_1(object sender, EventArgs e)
         {
-            Close();
+            
         }
     }
 }

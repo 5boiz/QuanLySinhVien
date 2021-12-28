@@ -12,16 +12,13 @@ using System.Windows.Forms;
 
 namespace QuanLy
 {
-    public partial class fQuanLyLopHoc : Form
+    public partial class ClassTab : Form
     {
-        public fQuanLyLopHoc()
+        public ClassTab()
         {
             InitializeComponent();
         }
 
-        public fMain frm;
-        public delegate void _deDongTab();
-        public _deDongTab dongTab;
 
 
         private void fQuanLyLopHoc_Load(object sender, EventArgs e)
@@ -60,7 +57,7 @@ namespace QuanLy
 
         private void closeButton1_Click(object sender, EventArgs e)
         {
-            dongTab();
+            
         }
 
     }

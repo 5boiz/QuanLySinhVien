@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy.Forms
 {
-    partial class fDKNguoiDung
+    partial class CreateUserForm
     {
         /// <summary>
         /// Required designer variable.

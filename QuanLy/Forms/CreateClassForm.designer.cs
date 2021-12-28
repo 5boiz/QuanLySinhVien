@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy.UC_control
 {
-    partial class fDKLop
+    partial class CreateClassForm
     {
         /// <summary>
         /// Required designer variable.

@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy
 {
-    partial class fMain
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
