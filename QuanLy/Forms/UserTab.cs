@@ -19,6 +19,8 @@ namespace QuanLy
             this.TopLevel = false;
             this.Dock = DockStyle.Fill;
             this.Visible = true;
+
+            Static.controller.LoadDataToDataGridView(dgvUser, Static.controller.bindingSourceStudent);
         }
 
 

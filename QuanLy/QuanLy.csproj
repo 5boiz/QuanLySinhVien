@@ -69,6 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\LoadDataToDataGridView.cs" />
+    <Compile Include="Controller\GetAllStudent.cs" />
     <Compile Include="Controller\Logout.cs" />
     <Compile Include="Controller\Login.cs" />
     <Compile Include="Controller\Controller.cs" />

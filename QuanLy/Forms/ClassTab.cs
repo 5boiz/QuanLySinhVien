@@ -20,6 +20,10 @@ namespace QuanLy
             this.TopLevel = false;
             this.Dock = DockStyle.Fill;
             this.Visible = true;
+
+            
         }
+
+
     }
 }
