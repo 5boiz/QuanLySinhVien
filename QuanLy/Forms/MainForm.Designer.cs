@@ -51,15 +51,15 @@ namespace QuanLy
             this.buttonItem13 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
-            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnUserInfo = new DevComponents.DotNetBar.ButtonItem();
-            this.btnLogout = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
             this.btnClass = new DevComponents.DotNetBar.ButtonItem();
             this.btnStudent = new DevComponents.DotNetBar.ButtonItem();
             this.btnTeacher = new DevComponents.DotNetBar.ButtonItem();
+            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnUserInfo = new DevComponents.DotNetBar.ButtonItem();
+            this.btnLogout = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
@@ -83,8 +83,8 @@ namespace QuanLy
             this.tabPageUser = new System.Windows.Forms.TabPage();
             this.tabPageHome = new System.Windows.Forms.TabPage();
             this.ribbonControl1.SuspendLayout();
-            this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
+            this.ribbonPanel1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -292,55 +292,6 @@ namespace QuanLy
             this.ribbonControl1.TabIndex = 0;
             this.ribbonControl1.Text = "ribbonControl1";
             // 
-            // ribbonPanel1
-            // 
-            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel1.Controls.Add(this.ribbonBar1);
-            this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 55);
-            this.ribbonPanel1.Name = "ribbonPanel1";
-            this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(1082, 134);
-            this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Visible = false;
-            // 
-            // ribbonBar1
-            // 
-            this.ribbonBar1.AutoOverflowEnabled = true;
-            this.ribbonBar1.ContainerControlProcessDialogKey = true;
-            this.ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnUserInfo,
-            this.btnLogout});
-            this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
-            this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(180, 131);
-            this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonBar1.TabIndex = 0;
-            this.ribbonBar1.Text = "Hệ thống";
-            // 
-            // btnUserInfo
-            // 
-            this.btnUserInfo.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnUserInfo.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnUserInfo.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnUserInfo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnUserInfo.Name = "btnUserInfo";
-            this.btnUserInfo.SubItemsExpandWidth = 14;
-            this.btnUserInfo.Text = "<div width=\"70\" align=\"center\">Thông tin<br/> cá nhân</div>";
-            this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnLogout.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnLogout.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.SubItemsExpandWidth = 14;
-            this.btnLogout.Text = "<div width=\"70\" align=\"center\">Đăng xuất</div>";
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // ribbonPanel2
             // 
             this.ribbonPanel2.AutoSize = true;
@@ -401,6 +352,55 @@ namespace QuanLy
             this.btnTeacher.SubItemsExpandWidth = 14;
             this.btnTeacher.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>giáo viên</div>";
             this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
+            // 
+            // ribbonPanel1
+            // 
+            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel1.Controls.Add(this.ribbonBar1);
+            this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 55);
+            this.ribbonPanel1.Name = "ribbonPanel1";
+            this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel1.Size = new System.Drawing.Size(1082, 134);
+            this.ribbonPanel1.TabIndex = 1;
+            this.ribbonPanel1.Visible = false;
+            // 
+            // ribbonBar1
+            // 
+            this.ribbonBar1.AutoOverflowEnabled = true;
+            this.ribbonBar1.ContainerControlProcessDialogKey = true;
+            this.ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnUserInfo,
+            this.btnLogout});
+            this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
+            this.ribbonBar1.Name = "ribbonBar1";
+            this.ribbonBar1.Size = new System.Drawing.Size(180, 131);
+            this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonBar1.TabIndex = 0;
+            this.ribbonBar1.Text = "Hệ thống";
+            // 
+            // btnUserInfo
+            // 
+            this.btnUserInfo.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnUserInfo.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnUserInfo.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnUserInfo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnUserInfo.Name = "btnUserInfo";
+            this.btnUserInfo.SubItemsExpandWidth = 14;
+            this.btnUserInfo.Text = "<div width=\"70\" align=\"center\">Thông tin<br/> cá nhân</div>";
+            this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnLogout.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnLogout.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnLogout.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.SubItemsExpandWidth = 14;
+            this.btnLogout.Text = "<div width=\"70\" align=\"center\">Đăng xuất</div>";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // ribbonTabItem2
             // 
@@ -596,13 +596,14 @@ namespace QuanLy
             // 
             // tabPageHome
             // 
+            this.tabPageHome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tabPageHome.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPageHome.Location = new System.Drawing.Point(4, 25);
             this.tabPageHome.Name = "tabPageHome";
             this.tabPageHome.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageHome.Size = new System.Drawing.Size(1074, 379);
             this.tabPageHome.TabIndex = 2;
             this.tabPageHome.Text = "tabPageHome";
-            this.tabPageHome.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -617,8 +618,8 @@ namespace QuanLy
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
-            this.ribbonPanel1.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);
+            this.ribbonPanel1.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
