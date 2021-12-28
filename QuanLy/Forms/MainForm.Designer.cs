@@ -53,14 +53,13 @@ namespace QuanLy
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnAccount = new DevComponents.DotNetBar.ButtonItem();
-            this.btnThongTinCaNhan = new DevComponents.DotNetBar.ButtonItem();
+            this.btnUserInfo = new DevComponents.DotNetBar.ButtonItem();
             this.btnLogout = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnQuanLyLopHoc = new DevComponents.DotNetBar.ButtonItem();
-            this.btnQuanLySinhVien = new DevComponents.DotNetBar.ButtonItem();
-            this.btnGiaoVien = new DevComponents.DotNetBar.ButtonItem();
+            this.btnClass = new DevComponents.DotNetBar.ButtonItem();
+            this.btnStudent = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTeacher = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
@@ -68,7 +67,6 @@ namespace QuanLy
             this.btnTimKiemSV = new DevComponents.DotNetBar.ButtonItem();
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlSV = new DevComponents.DotNetBar.TabControl();
             this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem20 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
@@ -80,10 +78,14 @@ namespace QuanLy
             this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem21 = new DevComponents.DotNetBar.ButtonItem();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabPageClass = new System.Windows.Forms.TabPage();
+            this.tabPageUser = new System.Windows.Forms.TabPage();
+            this.tabPageHome = new System.Windows.Forms.TabPage();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlSV)).BeginInit();
+            this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // office2007StartButton1
@@ -308,35 +310,25 @@ namespace QuanLy
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
             this.ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnAccount,
-            this.btnThongTinCaNhan,
+            this.btnUserInfo,
             this.btnLogout});
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(275, 131);
+            this.ribbonBar1.Size = new System.Drawing.Size(180, 131);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TabIndex = 0;
-            this.ribbonBar1.Text = "Tài khoản";
+            this.ribbonBar1.Text = "Hệ thống";
             // 
-            // btnAccount
+            // btnUserInfo
             // 
-            this.btnAccount.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnAccount.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnAccount.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnAccount.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.SubItemsExpandWidth = 14;
-            this.btnAccount.Text = "<div width=\"70\" align=\"center\">Quản lý<br/> tài khoản</div>";
-            // 
-            // btnThongTinCaNhan
-            // 
-            this.btnThongTinCaNhan.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnThongTinCaNhan.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnThongTinCaNhan.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnThongTinCaNhan.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnThongTinCaNhan.Name = "btnThongTinCaNhan";
-            this.btnThongTinCaNhan.SubItemsExpandWidth = 14;
-            this.btnThongTinCaNhan.Text = "<div width=\"70\" align=\"center\">Thông tin<br/> cá nhân</div>";
+            this.btnUserInfo.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnUserInfo.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnUserInfo.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnUserInfo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnUserInfo.Name = "btnUserInfo";
+            this.btnUserInfo.SubItemsExpandWidth = 14;
+            this.btnUserInfo.Text = "<div width=\"70\" align=\"center\">Thông tin<br/> cá nhân</div>";
+            this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
             // 
             // btnLogout
             // 
@@ -367,9 +359,9 @@ namespace QuanLy
             this.ribbonBar2.ContainerControlProcessDialogKey = true;
             this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnQuanLyLopHoc,
-            this.btnQuanLySinhVien,
-            this.btnGiaoVien});
+            this.btnClass,
+            this.btnStudent,
+            this.btnTeacher});
             this.ribbonBar2.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar2.Name = "ribbonBar2";
             this.ribbonBar2.Size = new System.Drawing.Size(259, 131);
@@ -377,35 +369,38 @@ namespace QuanLy
             this.ribbonBar2.TabIndex = 1;
             this.ribbonBar2.Text = "Quản lý";
             // 
-            // btnQuanLyLopHoc
+            // btnClass
             // 
-            this.btnQuanLyLopHoc.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnQuanLyLopHoc.Image = global::QuanLy.Properties.Resources.class_40px;
-            this.btnQuanLyLopHoc.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnQuanLyLopHoc.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnQuanLyLopHoc.Name = "btnQuanLyLopHoc";
-            this.btnQuanLyLopHoc.SubItemsExpandWidth = 14;
-            this.btnQuanLyLopHoc.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>lớp học</div>";
+            this.btnClass.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnClass.Image = global::QuanLy.Properties.Resources.class_40px;
+            this.btnClass.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnClass.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnClass.Name = "btnClass";
+            this.btnClass.SubItemsExpandWidth = 14;
+            this.btnClass.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>lớp học</div>";
+            this.btnClass.Click += new System.EventHandler(this.btnClass_Click);
             // 
-            // btnQuanLySinhVien
+            // btnStudent
             // 
-            this.btnQuanLySinhVien.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnQuanLySinhVien.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnQuanLySinhVien.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnQuanLySinhVien.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnQuanLySinhVien.Name = "btnQuanLySinhVien";
-            this.btnQuanLySinhVien.SubItemsExpandWidth = 14;
-            this.btnQuanLySinhVien.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>học sinh</div>";
+            this.btnStudent.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnStudent.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnStudent.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnStudent.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.SubItemsExpandWidth = 14;
+            this.btnStudent.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>học sinh</div>";
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
-            // btnGiaoVien
+            // btnTeacher
             // 
-            this.btnGiaoVien.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnGiaoVien.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnGiaoVien.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnGiaoVien.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnGiaoVien.Name = "btnGiaoVien";
-            this.btnGiaoVien.SubItemsExpandWidth = 14;
-            this.btnGiaoVien.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>giáo viên</div>";
+            this.btnTeacher.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnTeacher.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnTeacher.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnTeacher.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnTeacher.Name = "btnTeacher";
+            this.btnTeacher.SubItemsExpandWidth = 14;
+            this.btnTeacher.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>giáo viên</div>";
+            this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
             // 
             // ribbonTabItem2
             // 
@@ -456,20 +451,6 @@ namespace QuanLy
             this.tabItem2.AttachedControl = this.tabControlPanel2;
             this.tabItem2.Name = "tabItem2";
             this.tabItem2.Text = "tabItem2";
-            // 
-            // tabControlSV
-            // 
-            this.tabControlSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
-            this.tabControlSV.CanReorderTabs = true;
-            this.tabControlSV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlSV.Location = new System.Drawing.Point(4, 192);
-            this.tabControlSV.Name = "tabControlSV";
-            this.tabControlSV.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.tabControlSV.SelectedTabIndex = -1;
-            this.tabControlSV.Size = new System.Drawing.Size(1082, 408);
-            this.tabControlSV.TabIndex = 1;
-            this.tabControlSV.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tabControlSV.Text = "tabControl1";
             // 
             // buttonItem17
             // 
@@ -581,22 +562,64 @@ namespace QuanLy
             this.buttonItem21.SubItemsExpandWidth = 14;
             this.buttonItem21.Text = "<div width=\"70\" align=\"center\">Sinh viên</div>";
             // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.tabPageClass);
+            this.tabControl.Controls.Add(this.tabPageUser);
+            this.tabControl.Controls.Add(this.tabPageHome);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Location = new System.Drawing.Point(4, 192);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1082, 408);
+            this.tabControl.TabIndex = 1;
+            // 
+            // tabPageClass
+            // 
+            this.tabPageClass.Location = new System.Drawing.Point(4, 25);
+            this.tabPageClass.Name = "tabPageClass";
+            this.tabPageClass.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClass.Size = new System.Drawing.Size(1074, 379);
+            this.tabPageClass.TabIndex = 0;
+            this.tabPageClass.Text = "tabPage1";
+            this.tabPageClass.UseVisualStyleBackColor = true;
+            // 
+            // tabPageUser
+            // 
+            this.tabPageUser.Location = new System.Drawing.Point(4, 25);
+            this.tabPageUser.Name = "tabPageUser";
+            this.tabPageUser.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUser.Size = new System.Drawing.Size(1074, 379);
+            this.tabPageUser.TabIndex = 1;
+            this.tabPageUser.Text = "tabPage2";
+            this.tabPageUser.UseVisualStyleBackColor = true;
+            // 
+            // tabPageHome
+            // 
+            this.tabPageHome.Location = new System.Drawing.Point(4, 25);
+            this.tabPageHome.Name = "tabPageHome";
+            this.tabPageHome.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHome.Size = new System.Drawing.Size(1074, 379);
+            this.tabPageHome.TabIndex = 2;
+            this.tabPageHome.Text = "tabPageHome";
+            this.tabPageHome.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 602);
-            this.Controls.Add(this.tabControlSV);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.fQuanLySinhVien_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel1.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlSV)).EndInit();
+            this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -629,7 +652,6 @@ namespace QuanLy
         private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem1;
         private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem2;
         private DevComponents.DotNetBar.QatCustomizeItem qatCustomizeItem1;
-        private DevComponents.DotNetBar.ButtonItem btnAccount;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
         private DevComponents.DotNetBar.TabItem tabItem2;
         private DevComponents.DotNetBar.ButtonItem buttonItem25;
@@ -637,9 +659,8 @@ namespace QuanLy
         private DevComponents.DotNetBar.ButtonItem buttonItem27;
         private DevComponents.DotNetBar.ButtonItem buttonItem29;
         private DevComponents.DotNetBar.RibbonBar ribbonBar2;
-        private DevComponents.DotNetBar.ButtonItem btnQuanLyLopHoc;
-        private DevComponents.DotNetBar.ButtonItem btnQuanLySinhVien;
-        private DevComponents.DotNetBar.TabControl tabControlSV;
+        private DevComponents.DotNetBar.ButtonItem btnClass;
+        private DevComponents.DotNetBar.ButtonItem btnStudent;
         private DevComponents.DotNetBar.ButtonItem buttonItem32;
         private DevComponents.DotNetBar.ButtonItem buttonItem23;
         private DevComponents.DotNetBar.ButtonItem buttonItem22;
@@ -649,9 +670,13 @@ namespace QuanLy
         private DevComponents.DotNetBar.ButtonItem buttonItem28;
         private DevComponents.DotNetBar.TextBoxItem textBoxItem1;
         private DevComponents.DotNetBar.ButtonItem btnTimKiemSV;
-        private DevComponents.DotNetBar.ButtonItem btnGiaoVien;
-        private DevComponents.DotNetBar.ButtonItem btnThongTinCaNhan;
+        private DevComponents.DotNetBar.ButtonItem btnTeacher;
+        private DevComponents.DotNetBar.ButtonItem btnUserInfo;
         private DevComponents.DotNetBar.ButtonItem btnLogout;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage tabPageClass;
+        private System.Windows.Forms.TabPage tabPageUser;
+        private System.Windows.Forms.TabPage tabPageHome;
     }
 }
 

@@ -29,7 +29,7 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnLopHoc = new System.Windows.Forms.Panel();
@@ -90,7 +90,6 @@ namespace QuanLy
             this.btnThem.TabIndex = 9;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnNapLai
             // 
@@ -101,7 +100,6 @@ namespace QuanLy
             this.btnNapLai.TabIndex = 6;
             this.btnNapLai.Text = "Nạp lại";
             this.btnNapLai.UseVisualStyleBackColor = true;
-            this.btnNapLai.Click += new System.EventHandler(this.btnNapLai_Click);
             // 
             // btnSua
             // 
@@ -112,7 +110,6 @@ namespace QuanLy
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -123,7 +120,6 @@ namespace QuanLy
             this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // closeButton1
             // 
@@ -133,7 +129,6 @@ namespace QuanLy
             this.closeButton1.Name = "closeButton1";
             this.closeButton1.Size = new System.Drawing.Size(40, 40);
             this.closeButton1.TabIndex = 6;
-            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click);
             // 
             // dgvLop
             // 
@@ -147,14 +142,14 @@ namespace QuanLy
             this.colKhoa,
             this.GiaoVienCN,
             this.colNamHoc});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLop.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLop.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLop.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvLop.Location = new System.Drawing.Point(0, 70);
@@ -164,7 +159,6 @@ namespace QuanLy
             this.dgvLop.RowTemplate.Height = 24;
             this.dgvLop.Size = new System.Drawing.Size(950, 507);
             this.dgvLop.TabIndex = 10;
-            this.dgvLop.Click += new System.EventHandler(this.dgvLop_Click);
             // 
             // colID
             // 
@@ -211,7 +205,7 @@ namespace QuanLy
             this.colNamHoc.ReadOnly = true;
             this.colNamHoc.Width = 125;
             // 
-            // fQuanLyLopHoc
+            // ClassTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,9 +214,8 @@ namespace QuanLy
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fQuanLyLopHoc";
+            this.Name = "ClassTab";
             this.Text = "fQuanLyLop";
-            this.Load += new System.EventHandler(this.fQuanLyLopHoc_Load);
             this.panel2.ResumeLayout(false);
             this.pnbtnLopHoc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLop)).EndInit();

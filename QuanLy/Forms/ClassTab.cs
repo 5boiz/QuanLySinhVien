@@ -17,48 +17,9 @@ namespace QuanLy
         public ClassTab()
         {
             InitializeComponent();
+            this.TopLevel = false;
+            this.Dock = DockStyle.Fill;
+            this.Visible = true;
         }
-
-
-
-        private void fQuanLyLopHoc_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-       
-        private void btnNapLai_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dgvLop_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-
-
-        private void closeButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
     }
 }
