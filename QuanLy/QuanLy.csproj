@@ -104,11 +104,17 @@
     <Compile Include="Forms\ClassTab.designer.cs">
       <DependentUpon>ClassTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserTab.cs">
+    <Compile Include="Forms\TeacherTab.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserTab.designer.cs">
-      <DependentUpon>UserTab.cs</DependentUpon>
+    <Compile Include="Forms\TeacherTab.designer.cs">
+      <DependentUpon>TeacherTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentTab.designer.cs">
+      <DependentUpon>StudentTab.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserInfoForm.cs">
       <SubType>Form</SubType>
@@ -144,8 +150,11 @@
     <EmbeddedResource Include="Forms\ClassTab.resx">
       <DependentUpon>ClassTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserTab.resx">
-      <DependentUpon>UserTab.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TeacherTab.resx">
+      <DependentUpon>TeacherTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentTab.resx">
+      <DependentUpon>StudentTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserInfoForm.resx">
       <DependentUpon>UserInfoForm.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy
 {
-    partial class UserTab
+    partial class TeacherTab
     {
         /// <summary>
         /// Required designer variable.

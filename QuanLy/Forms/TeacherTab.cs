@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QuanLy
 {
-    public partial class UserTab : Form
+    public partial class TeacherTab : Form
     {
-        public UserTab()
+        public TeacherTab()
         {
             InitializeComponent();
             this.TopLevel = false;

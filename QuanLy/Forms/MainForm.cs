@@ -31,8 +31,11 @@ namespace QuanLy
             tabPageClass.Controls.Add(classTab);
 
 
-            UserTab userTab = new UserTab();
-            tabPageUser.Controls.Add(userTab);
+            StudentTab studentTab = new StudentTab();
+            tabPageStudent.Controls.Add(studentTab);
+
+            TeacherTab teacherTab = new TeacherTab();
+            tabPageTeacher.Controls.Add(teacherTab);
 
 
         }
@@ -68,7 +71,7 @@ namespace QuanLy
 
         private void btnTeacher_Click(object sender, EventArgs e)
         {
-            tabControl.SelectedIndex = 1;
+            tabControl.SelectedIndex = 3;
 
         }
     }
