@@ -16,9 +16,12 @@ namespace QuanLy
 
         }
 
-        public void Resetbinding(BindingSource bindingSource)
+        public void Resetbinding()
         {
-            bindingSource.ResetBindings(false);
+            bindingSourceStudent.DataSource = GetAllStudent();
+            bindingSourceTeacher.DataSource = GetAllTeacher();
+            bindingSourceStudent.ResetBindings(false);
+            bindingSourceTeacher.ResetBindings(false);
 
         }
     }

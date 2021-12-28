@@ -69,6 +69,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\IsUserNameExists.cs" />
+    <Compile Include="Controller\AddUser.cs" />
+    <Compile Include="Controller\GetLastID.cs" />
     <Compile Include="Controller\GetAllTeacher.cs" />
     <Compile Include="Controller\LoadDataToDataGridView.cs" />
     <Compile Include="Controller\GetAllStudent.cs" />

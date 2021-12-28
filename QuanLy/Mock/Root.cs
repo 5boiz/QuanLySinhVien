@@ -13,5 +13,6 @@ namespace QuanLy
 
         public Dictionary<string, Class> classes { get; set; }
 
+        public int LID { get; set; }
     }
 }

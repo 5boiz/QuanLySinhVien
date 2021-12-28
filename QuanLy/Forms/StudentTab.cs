@@ -1,4 +1,6 @@
 ﻿
+using QuanLy.Forms;
+using QuanLy.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +36,12 @@ namespace QuanLy
         private void closeButton1_Click_1(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            CreateUserForm createUserForm = new CreateUserForm(LoaiNguoiDung.SinhVien);
+            createUserForm.Show();
         }
     }
 }

@@ -1,42 +1,43 @@
 {
-    "users":{
-        "1":{
-            "ID":"1",
-            "HoTen":"Nguyễn Hoài N",
-            "GioiTinh":"Nam",
-            "TenTaiKhoan":"nam",
-            "MatKhau":"123",
-            "DiaChi":"Thanh Hóa",
-            "Lop":"19ct113",
-            "LoaiNguoiDung":"SinhVien"
-        },
-        "2":{
-            "ID":"2",
-            "HoTen":"Nguyễn Hoài M",
-            "GioiTinh":"Nam",
-            "TenTaiKhoan":"mam",
-            "MatKhau":"123",
-            "DiaChi":"Thanh Hóa",
-            "Lop":"19ct113",
-            "LoaiNguoiDung":"SinhVien"
-        },
-        "3":{
-            "ID":"3",
-            "HoTen":"Nguyễn Hoài A",
-            "GioiTinh":"Nam",
-            "TenTaiKhoan":"admin",
-            "MatKhau":"admin",
-            "DiaChi":"Thanh Hóa",
-            "Lop":"19ct113",
-            "LoaiNguoiDung":"GiaoVien"
-        }
+  "LID": 3,
+  "users": {
+    "1": {
+      "ID": "1",
+      "HoTen": "Nguyễn Hoài N",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "nam",
+      "MatKhau": "123",
+      "DiaChi": "Thanh Hóa",
+      "Lop": "19ct113",
+      "LoaiNguoiDung": "SinhVien"
     },
-    "classes":{
-        "19ct113":{
-            "ID":"19ct113",
-            "Khoa":"Công Nghệ Thông Tin"
-        }
+    "2": {
+      "ID": "2",
+      "HoTen": "Nguyễn Hoài M",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "mam",
+      "MatKhau": "123",
+      "DiaChi": "Thanh Hóa",
+      "Lop": "19ct113",
+      "LoaiNguoiDung": "SinhVien"
+    },
+    "3": {
+      "ID": "3",
+      "HoTen": "Nguyễn Hoài A",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "admin",
+      "MatKhau": "admin",
+      "DiaChi": "Thanh Hóa",
+      "Lop": "19ct113",
+      "LoaiNguoiDung": "GiaoVien"
     }
+  },
+  "classes": {
+    "19ct113": {
+      "ID": "19ct113",
+      "Khoa": "Công Nghệ Thông Tin"
+    }
+  }
 
 
 }

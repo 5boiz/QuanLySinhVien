@@ -78,14 +78,14 @@ namespace QuanLy
             this.comboBox1.Location = new System.Drawing.Point(175, 256);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(277, 24);
-            this.comboBox1.TabIndex = 114;
+            this.comboBox1.TabIndex = 4;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(175, 406);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(277, 22);
-            this.textBox3.TabIndex = 113;
+            this.textBox3.TabIndex = 7;
             // 
             // label7
             // 
@@ -102,7 +102,7 @@ namespace QuanLy
             this.textBox2.Location = new System.Drawing.Point(175, 356);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(277, 22);
-            this.textBox2.TabIndex = 111;
+            this.textBox2.TabIndex = 6;
             // 
             // label6
             // 
@@ -119,7 +119,7 @@ namespace QuanLy
             this.textBox1.Location = new System.Drawing.Point(175, 306);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(277, 22);
-            this.textBox1.TabIndex = 109;
+            this.textBox1.TabIndex = 5;
             // 
             // label5
             // 
@@ -137,7 +137,7 @@ namespace QuanLy
             this.cbGiaoVien.Location = new System.Drawing.Point(175, 456);
             this.cbGiaoVien.Name = "cbGiaoVien";
             this.cbGiaoVien.Size = new System.Drawing.Size(277, 24);
-            this.cbGiaoVien.TabIndex = 107;
+            this.cbGiaoVien.TabIndex = 7;
             // 
             // label4
             // 
@@ -188,7 +188,7 @@ namespace QuanLy
             this.cbKhoa.Location = new System.Drawing.Point(175, 206);
             this.cbKhoa.Name = "cbKhoa";
             this.cbKhoa.Size = new System.Drawing.Size(277, 24);
-            this.cbKhoa.TabIndex = 102;
+            this.cbKhoa.TabIndex = 3;
             // 
             // label2
             // 
@@ -205,7 +205,7 @@ namespace QuanLy
             this.txtTenLop.Location = new System.Drawing.Point(175, 156);
             this.txtTenLop.Name = "txtTenLop";
             this.txtTenLop.Size = new System.Drawing.Size(277, 22);
-            this.txtTenLop.TabIndex = 100;
+            this.txtTenLop.TabIndex = 2;
             // 
             // txtID
             // 
@@ -213,7 +213,7 @@ namespace QuanLy
             this.txtID.Location = new System.Drawing.Point(175, 104);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(277, 22);
-            this.txtID.TabIndex = 99;
+            this.txtID.TabIndex = 1;
             // 
             // label1
             // 
@@ -225,7 +225,7 @@ namespace QuanLy
             this.label1.TabIndex = 98;
             this.label1.Text = "ID";
             // 
-            // fThongTinCaNhan
+            // UserInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -251,7 +251,7 @@ namespace QuanLy
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblThongTinCaNhan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fThongTinCaNhan";
+            this.Name = "UserInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThongTinCaNhan";
             this.Load += new System.EventHandler(this.fThongTinCaNhan_Load);

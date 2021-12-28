@@ -29,6 +29,16 @@
       "DiaChi": "Thanh Hóa",
       "Lop": "19ct113",
       "LoaiNguoiDung": 1
+    },
+    "4": {
+      "ID": "4",
+      "HoTen": "ádasd",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "ádasd",
+      "MatKhau": "ádasd",
+      "DiaChi": "ádas",
+      "Lop": "19CT113",
+      "LoaiNguoiDung": 0
     }
   },
   "classes": {
@@ -36,5 +46,6 @@
       "ID": "19ct113",
       "Khoa": "Công Nghệ Thông Tin"
     }
-  }
+  },
+  "LID": 4
 }
