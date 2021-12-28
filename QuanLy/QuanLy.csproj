@@ -69,6 +69,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\GetUserByID.cs" />
+    <Compile Include="Controller\UpdateUser.cs" />
+    <Compile Include="Controller\IsUserNameExists.cs" />
+    <Compile Include="Controller\AddUser.cs" />
+    <Compile Include="Controller\GetLastID.cs" />
     <Compile Include="Controller\GetAllTeacher.cs" />
     <Compile Include="Controller\LoadDataToDataGridView.cs" />
     <Compile Include="Controller\GetAllStudent.cs" />
@@ -80,6 +85,12 @@
     </Compile>
     <Compile Include="Forms\CreateClassForm.designer.cs">
       <DependentUpon>CreateClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditUserForm.designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CreateUserForm.cs">
       <SubType>Form</SubType>
@@ -138,6 +149,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\CreateClassForm.resx">
       <DependentUpon>CreateClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateUserForm.resx">
       <DependentUpon>CreateUserForm.cs</DependentUpon>

@@ -11,18 +11,24 @@ using System.Windows.Forms;
 
 namespace QuanLy.Forms
 {
-    public partial class CreateUserForm : Form
+    public partial class EditUserForm : Form
     {
-        public CreateUserForm(LoaiNguoiDung loaiNguoiDung)
+        User user;
+        public EditUserForm(User value)
         {
             InitializeComponent();
+
             cbType.DataSource = Enum.GetValues(typeof(LoaiNguoiDung));
-            cbType.SelectedItem = loaiNguoiDung;
-            txtID.Text = (Static.controller.GetLastID() + 1).ToString();
-            txtID.Enabled = false;
-            cbType.Enabled = false;
-            cbGender.SelectedIndex = 0;
-            cbClass.SelectedIndex = 0;
+
+            user = value;
+            txtID.Text = user.ID;
+            txtFullName.Text = user.HoTen;
+            cbGender.SelectedItem = user.GioiTinh;
+            txtAddress.Text = user.DiaChi;
+            cbClass.SelectedItem = user.Lop;
+            txtUserName.Text = user.TenTaiKhoan;
+            txtPassWord.Text = user.MatKhau;
+            cbType.SelectedItem = user.LoaiNguoiDung;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -32,7 +38,7 @@ namespace QuanLy.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            User user = new User();
+            
             user.ID = txtID.Text;
             user.HoTen = txtFullName.Text;
             user.GioiTinh = cbGender.SelectedItem.ToString();
@@ -48,14 +54,10 @@ namespace QuanLy.Forms
                 MessageBox.Show("Thông tin không được để trống");
                 return;
             }
-            if (Static.controller.IsUserNameExists(user.TenTaiKhoan))
-            {
-                MessageBox.Show("Tên tài khoản đã được sử dụng");
-                return;
-            }
+            
 
-            Static.controller.AddUser(user);
-            MessageBox.Show("Tạo thành công");
+            Static.controller.UpdateUser(user);
+            MessageBox.Show("Cập nhập thành công");
             
         }
     }

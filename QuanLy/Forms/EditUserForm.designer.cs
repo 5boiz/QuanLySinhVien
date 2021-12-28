@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy.Forms
 {
-    partial class CreateUserForm
+    partial class EditUserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -226,13 +226,13 @@ namespace QuanLy.Forms
             // 
             this.cbClass.FormattingEnabled = true;
             this.cbClass.Items.AddRange(new object[] {
-            "19CT113"});
+            "19ct113"});
             this.cbClass.Location = new System.Drawing.Point(188, 258);
             this.cbClass.Name = "cbClass";
             this.cbClass.Size = new System.Drawing.Size(277, 24);
             this.cbClass.TabIndex = 4;
             // 
-            // CreateUserForm
+            // EditUserForm
             // 
             this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -260,7 +260,7 @@ namespace QuanLy.Forms
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CreateUserForm";
+            this.Name = "EditUserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDKNguoiDung";
             this.ResumeLayout(false);
