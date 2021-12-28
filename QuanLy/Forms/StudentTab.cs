@@ -43,5 +43,19 @@ namespace QuanLy
             CreateUserForm createUserForm = new CreateUserForm(LoaiNguoiDung.SinhVien);
             createUserForm.Show();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dgvStudent.SelectedRows[0];
+            string ID = row.Cells[0].Value.ToString();
+            User user = Static.controller.GetUserByID(ID);
+            if (user == null)
+            {
+                MessageBox.Show("Có lỗi!!!! Người dùng không tồn tại.");
+                return;
+            }
+            EditUserForm editUserForm = new EditUserForm(user);
+            editUserForm.ShowDialog();
+        }
     }
 }

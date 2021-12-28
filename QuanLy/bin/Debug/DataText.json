@@ -2,17 +2,17 @@
   "users": {
     "1": {
       "ID": "1",
-      "HoTen": "Nguyễn Hoài N",
+      "HoTen": "Nguyễn Hoài Nam",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
       "Lop": "19ct113",
-      "LoaiNguoiDung": 0
+      "LoaiNguoiDung": 1
     },
     "2": {
       "ID": "2",
-      "HoTen": "Nguyễn Hoài M",
+      "HoTen": "Nguyễn Hoài Nam2",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "mam",
       "MatKhau": "123",
@@ -29,16 +29,6 @@
       "DiaChi": "Thanh Hóa",
       "Lop": "19ct113",
       "LoaiNguoiDung": 1
-    },
-    "4": {
-      "ID": "4",
-      "HoTen": "ádasd",
-      "GioiTinh": "Nam",
-      "TenTaiKhoan": "ádasd",
-      "MatKhau": "ádasd",
-      "DiaChi": "ádas",
-      "Lop": "19CT113",
-      "LoaiNguoiDung": 0
     }
   },
   "classes": {
@@ -47,5 +37,5 @@
       "Khoa": "Công Nghệ Thông Tin"
     }
   },
-  "LID": 4
+  "LID": 3
 }
