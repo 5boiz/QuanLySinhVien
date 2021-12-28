@@ -29,7 +29,7 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnNguoiDung = new System.Windows.Forms.Panel();
@@ -39,14 +39,16 @@ namespace QuanLy
             this.btnNapLai = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.dgvNguoiDung = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.pnbtnNguoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoiDung)).BeginInit();
@@ -56,9 +58,9 @@ namespace QuanLy
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 589);
+            this.panel1.Location = new System.Drawing.Point(0, 553);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 23);
+            this.panel1.Size = new System.Drawing.Size(998, 23);
             this.panel1.TabIndex = 10;
             // 
             // panel2
@@ -69,7 +71,7 @@ namespace QuanLy
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(957, 70);
+            this.panel2.Size = new System.Drawing.Size(998, 70);
             this.panel2.TabIndex = 9;
             // 
             // pnbtnNguoiDung
@@ -153,16 +155,6 @@ namespace QuanLy
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
-            // closeButton1
-            // 
-            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton1.Location = new System.Drawing.Point(897, 15);
-            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.closeButton1.Name = "closeButton1";
-            this.closeButton1.Size = new System.Drawing.Size(40, 40);
-            this.closeButton1.TabIndex = 9;
-            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
-            // 
             // dgvNguoiDung
             // 
             this.dgvNguoiDung.AllowUserToAddRows = false;
@@ -171,19 +163,21 @@ namespace QuanLy
             this.dgvNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNguoiDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
-            this.MaSV,
             this.HoTen,
             this.Lop,
+            this.GioiTinh,
             this.Diachi,
-            this.SDT});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvNguoiDung.DefaultCellStyle = dataGridViewCellStyle2;
+            this.TenTaiKhoan,
+            this.MatKhau,
+            this.LoaiTaiKhoan});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvNguoiDung.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNguoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNguoiDung.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvNguoiDung.Location = new System.Drawing.Point(0, 70);
@@ -191,8 +185,18 @@ namespace QuanLy
             this.dgvNguoiDung.ReadOnly = true;
             this.dgvNguoiDung.RowHeadersWidth = 51;
             this.dgvNguoiDung.RowTemplate.Height = 24;
-            this.dgvNguoiDung.Size = new System.Drawing.Size(957, 519);
+            this.dgvNguoiDung.Size = new System.Drawing.Size(998, 483);
             this.dgvNguoiDung.TabIndex = 11;
+            // 
+            // closeButton1
+            // 
+            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton1.Location = new System.Drawing.Point(938, 15);
+            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.closeButton1.Name = "closeButton1";
+            this.closeButton1.Size = new System.Drawing.Size(40, 40);
+            this.closeButton1.TabIndex = 9;
+            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
             // 
             // ID
             // 
@@ -202,15 +206,6 @@ namespace QuanLy
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             this.ID.Width = 125;
-            // 
-            // MaSV
-            // 
-            this.MaSV.DataPropertyName = "MaSV";
-            this.MaSV.HeaderText = "Mã sinh viên";
-            this.MaSV.MinimumWidth = 6;
-            this.MaSV.Name = "MaSV";
-            this.MaSV.ReadOnly = true;
-            this.MaSV.Width = 125;
             // 
             // HoTen
             // 
@@ -230,6 +225,14 @@ namespace QuanLy
             this.Lop.ReadOnly = true;
             this.Lop.Width = 125;
             // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 125;
+            // 
             // Diachi
             // 
             this.Diachi.DataPropertyName = "DiaChi";
@@ -239,20 +242,35 @@ namespace QuanLy
             this.Diachi.ReadOnly = true;
             this.Diachi.Width = 125;
             // 
-            // SDT
+            // TenTaiKhoan
             // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "Số điện thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
-            this.SDT.Width = 125;
+            this.TenTaiKhoan.HeaderText = "Tài khoản";
+            this.TenTaiKhoan.MinimumWidth = 6;
+            this.TenTaiKhoan.Name = "TenTaiKhoan";
+            this.TenTaiKhoan.ReadOnly = true;
+            this.TenTaiKhoan.Width = 125;
+            // 
+            // MatKhau
+            // 
+            this.MatKhau.HeaderText = "Mật khẩu";
+            this.MatKhau.MinimumWidth = 6;
+            this.MatKhau.Name = "MatKhau";
+            this.MatKhau.ReadOnly = true;
+            this.MatKhau.Width = 125;
+            // 
+            // LoaiTaiKhoan
+            // 
+            this.LoaiTaiKhoan.HeaderText = "Loại tài khoản";
+            this.LoaiTaiKhoan.MinimumWidth = 6;
+            this.LoaiTaiKhoan.Name = "LoaiTaiKhoan";
+            this.LoaiTaiKhoan.ReadOnly = true;
+            this.LoaiTaiKhoan.Width = 125;
             // 
             // fQuanLySinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 612);
+            this.ClientSize = new System.Drawing.Size(998, 576);
             this.Controls.Add(this.dgvNguoiDung);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -272,12 +290,6 @@ namespace QuanLy
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvNguoiDung;
         private UC_control.CloseButton closeButton1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diachi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.Panel pnbtnNguoiDung;
         private Guna.UI.WinForms.GunaTextBox txtTimKiemNguoiDung;
         private System.Windows.Forms.Button btnIn;
@@ -285,6 +297,14 @@ namespace QuanLy
         private System.Windows.Forms.Button btnNapLai;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Diachi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MatKhau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiTaiKhoan;
         //private UC_control.MenuButton menuButton1;
         //private UC_control.MenuButton menuButton2;
         //private UC_control.MenuButton menuButton3;

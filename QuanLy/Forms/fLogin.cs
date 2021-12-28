@@ -33,34 +33,39 @@ namespace QuanLy
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtTaiKhoan.Text))
-            {
-                if (!string.IsNullOrEmpty(txtMatKhau.Text))
-                {
 
-                    if (Kiemtradangnhap(txtTaiKhoan.Text, txtMatKhau.Text))
-                    {
+            this.Hide();
+            fMain fquanlysinhvien = new fMain();
+            fquanlysinhvien.ShowDialog();
+            this.Close();
+            //if (!string.IsNullOrEmpty(txtTaiKhoan.Text))
+            //{
+            //    if (!string.IsNullOrEmpty(txtMatKhau.Text))
+            //    {
 
-                        this.Hide();
-                        fMain fquanlysinhvien = new fMain();
-                        fquanlysinhvien.ShowDialog();
-                        this.Close();
-                        
-                    }
-                    else
-                    {
-                        MessageBox.Show("Nhập sai tên đăng nhập hoặc mật khẩu", "Thông báo");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Nhập mật khẩu", "Thông báo");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Nhập tên đăng nhập", "Thông báo");
-            }
+            //        if (Kiemtradangnhap(txtTaiKhoan.Text, txtMatKhau.Text))
+            //        {
+
+            //            this.Hide();
+            //            fMain fquanlysinhvien = new fMain();
+            //            fquanlysinhvien.ShowDialog();
+            //            this.Close();
+
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Nhập sai tên đăng nhập hoặc mật khẩu", "Thông báo");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Nhập mật khẩu", "Thông báo");
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Nhập tên đăng nhập", "Thông báo");
+            //}
         }
 
         private bool Kiemtradangnhap(string tenDangNhap, string matKhau)
