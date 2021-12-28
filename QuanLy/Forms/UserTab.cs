@@ -16,6 +16,9 @@ namespace QuanLy
         public UserTab()
         {
             InitializeComponent();
+            this.TopLevel = false;
+            this.Dock = DockStyle.Fill;
+            this.Visible = true;
         }
 
 
