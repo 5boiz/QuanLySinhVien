@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy
 {
-    partial class fQuanLyLopHoc
+    partial class ClassTab
     {
         /// <summary>
         /// Required designer variable.

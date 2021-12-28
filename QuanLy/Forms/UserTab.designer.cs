@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy
 {
-    partial class fQuanLySinhVien
+    partial class UserTab
     {
         /// <summary>
         /// Required designer variable.

@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy
 {
-    partial class fThongTinCaNhan
+    partial class UserInfoForm
     {
         /// <summary>
         /// Required designer variable.

@@ -69,47 +69,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\fDKLop.cs">
+    <Compile Include="Controller\Logout.cs" />
+    <Compile Include="Controller\Login.cs" />
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Forms\CreateClassForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fDKLop.designer.cs">
-      <DependentUpon>fDKLop.cs</DependentUpon>
+    <Compile Include="Forms\CreateClassForm.designer.cs">
+      <DependentUpon>CreateClassForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\fDKNguoiDung.cs">
+    <Compile Include="Forms\CreateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fDKNguoiDung.designer.cs">
-      <DependentUpon>fDKNguoiDung.cs</DependentUpon>
+    <Compile Include="Forms\CreateUserForm.designer.cs">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\fLogin.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fLogin.designer.cs">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <Compile Include="Forms\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\fMain.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fMain.Designer.cs">
-      <DependentUpon>fMain.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\fQuanLyLopHoc.cs">
+    <Compile Include="Forms\ClassTab.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fQuanLyLopHoc.designer.cs">
-      <DependentUpon>fQuanLyLopHoc.cs</DependentUpon>
+    <Compile Include="Forms\ClassTab.designer.cs">
+      <DependentUpon>ClassTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\fQuanLyNguoiDung.cs">
+    <Compile Include="Forms\UserTab.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fQuanLyNguoiDung.designer.cs">
-      <DependentUpon>fQuanLyNguoiDung.cs</DependentUpon>
+    <Compile Include="Forms\UserTab.designer.cs">
+      <DependentUpon>UserTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\fThongTinCaNhan.cs">
+    <Compile Include="Forms\UserInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\fThongTinCaNhan.designer.cs">
-      <DependentUpon>fThongTinCaNhan.cs</DependentUpon>
+    <Compile Include="Forms\UserInfoForm.designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Mock\Mock.cs" />
     <Compile Include="Mock\Root.cs" />
@@ -124,26 +127,26 @@
     <Compile Include="UC_control\CloseButton.Designer.cs">
       <DependentUpon>CloseButton.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\fDKLop.resx">
-      <DependentUpon>fDKLop.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CreateClassForm.resx">
+      <DependentUpon>CreateClassForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fDKNguoiDung.resx">
-      <DependentUpon>fDKNguoiDung.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CreateUserForm.resx">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fMain.resx">
-      <DependentUpon>fMain.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fQuanLyLopHoc.resx">
-      <DependentUpon>fQuanLyLopHoc.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ClassTab.resx">
+      <DependentUpon>ClassTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fQuanLyNguoiDung.resx">
-      <DependentUpon>fQuanLyNguoiDung.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserTab.resx">
+      <DependentUpon>UserTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\fThongTinCaNhan.resx">
-      <DependentUpon>fThongTinCaNhan.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -253,5 +256,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

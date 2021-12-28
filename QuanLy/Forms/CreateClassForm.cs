@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLy.Forms
+namespace QuanLy.UC_control
 {
-    public partial class fDKNguoiDung : Form
+    public partial class CreateClassForm : Form
     {
-        public fDKNguoiDung()
+        public CreateClassForm()
         {
             InitializeComponent();
+        }
+
+        private void fDKLop_Load(object sender, EventArgs e)
+        {
+           
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

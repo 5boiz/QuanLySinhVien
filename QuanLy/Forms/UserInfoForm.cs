@@ -1,4 +1,4 @@
-﻿using DevComponents.DotNetBar;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,17 +11,20 @@ using System.Windows.Forms;
 
 namespace QuanLy
 {
-    public partial class fMain : DevComponents.DotNetBar.Office2007RibbonForm
+    public partial class UserInfoForm : Form
     {
-        public fMain()
+        public UserInfoForm()
         {
             InitializeComponent();
-        }
-
-        private void fQuanLySinhVien_Load(object sender, EventArgs e)
-        {
             
         }
-  
+       
+        
+        private void fThongTinCaNhan_Load(object sender, EventArgs e)
+        {
+
+           
+
+        }
     }
 }
