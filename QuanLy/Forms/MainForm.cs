@@ -22,6 +22,17 @@ namespace QuanLy
         {
             
         }
-  
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LoginState state = Static.controller.Logout();
+            if (state == LoginState.None)
+            {
+                this.Hide();
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

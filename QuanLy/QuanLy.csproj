@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Logout.cs" />
     <Compile Include="Controller\Login.cs" />
     <Compile Include="Controller\Controller.cs" />
     <Compile Include="Forms\CreateClassForm.cs">

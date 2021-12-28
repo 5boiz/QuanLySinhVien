@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLy
 {
-    enum LoginState
-    {
-        None,
-        Logged
-    }
     partial class Controller
     {
-        public User user;
+        public LoginState Logout()
+        {
+            user = null;
+            return LoginState.None;
+
+        }
     }
 }
