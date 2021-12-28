@@ -33,7 +33,14 @@ namespace QuanLy
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-
+            LoginState state = Static.controller.Login(txtTaiKhoan.Text, txtMatKhau.Text);
+            if (state == LoginState.Logged)
+            {
+                this.Hide();
+                MainForm mainForm = new MainForm();
+                mainForm.ShowDialog();
+                this.Close();
+            }
         }
 
         private void chbHienMatKhau_CheckedChanged(object sender, EventArgs e)
