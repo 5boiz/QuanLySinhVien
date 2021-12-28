@@ -40,7 +40,7 @@ namespace QuanLy
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.closeButton1 = new QuanLy.UC_control.CloseButton();
-            this.dgvUser = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.dgvStudent = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +51,7 @@ namespace QuanLy
             this.LoaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.pnbtnNguoiDung.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -165,13 +165,13 @@ namespace QuanLy
             this.closeButton1.TabIndex = 9;
             this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
             // 
-            // dgvUser
+            // dgvStudent
             // 
-            this.dgvUser.AllowUserToAddRows = false;
-            this.dgvUser.AllowUserToDeleteRows = false;
-            this.dgvUser.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvStudent.AllowUserToAddRows = false;
+            this.dgvStudent.AllowUserToDeleteRows = false;
+            this.dgvStudent.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.HoTen,
             this.Lop,
@@ -187,16 +187,16 @@ namespace QuanLy
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUser.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgvUser.Location = new System.Drawing.Point(0, 70);
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.ReadOnly = true;
-            this.dgvUser.RowHeadersWidth = 51;
-            this.dgvUser.RowTemplate.Height = 24;
-            this.dgvUser.Size = new System.Drawing.Size(998, 483);
-            this.dgvUser.TabIndex = 11;
+            this.dgvStudent.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStudent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvStudent.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvStudent.Location = new System.Drawing.Point(0, 70);
+            this.dgvStudent.Name = "dgvStudent";
+            this.dgvStudent.ReadOnly = true;
+            this.dgvStudent.RowHeadersWidth = 51;
+            this.dgvStudent.RowTemplate.Height = 24;
+            this.dgvStudent.Size = new System.Drawing.Size(998, 483);
+            this.dgvStudent.TabIndex = 11;
             // 
             // ID
             // 
@@ -270,21 +270,21 @@ namespace QuanLy
             this.LoaiTaiKhoan.ReadOnly = true;
             this.LoaiTaiKhoan.Width = 125;
             // 
-            // UserTab
+            // StudentTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 576);
-            this.Controls.Add(this.dgvUser);
+            this.Controls.Add(this.dgvStudent);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "UserTab";
+            this.Name = "StudentTab";
             this.Text = "QuanLySinhVien";
             this.Load += new System.EventHandler(this.fQuanLySinhVien_Load);
             this.panel2.ResumeLayout(false);
             this.pnbtnNguoiDung.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,7 +292,7 @@ namespace QuanLy
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dgvUser;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dgvStudent;
         private UC_control.CloseButton closeButton1;
         private System.Windows.Forms.Panel pnbtnNguoiDung;
         private Guna.UI.WinForms.GunaTextBox txtTimKiemNguoiDung;

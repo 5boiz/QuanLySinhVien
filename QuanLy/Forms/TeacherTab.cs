@@ -20,9 +20,8 @@ namespace QuanLy
             this.Dock = DockStyle.Fill;
             this.Visible = true;
 
-            Static.controller.LoadDataToDataGridView(dgvUser, Static.controller.bindingSourceStudent);
+            Static.controller.LoadDataToDataGridView(dgvTeacher, Static.controller.bindingSourceTeacher);
         }
-
 
 
         private void fQuanLySinhVien_Load(object sender, EventArgs e)
