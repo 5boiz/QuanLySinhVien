@@ -20,8 +20,11 @@ namespace QuanLy
         {
             bindingSourceStudent.DataSource = GetAllStudent();
             bindingSourceTeacher.DataSource = GetAllTeacher();
+            bindingSourceClass.DataSource = GetAllClass();
+
             bindingSourceStudent.ResetBindings(false);
             bindingSourceTeacher.ResetBindings(false);
+            bindingSourceClass.ResetBindings(false);
 
         }
     }

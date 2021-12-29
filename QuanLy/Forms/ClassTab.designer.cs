@@ -37,13 +37,13 @@ namespace QuanLy
             this.btnNapLai = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.dgvClass = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaoVienCN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.panel2.SuspendLayout();
             this.pnbtnLopHoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
@@ -121,15 +121,6 @@ namespace QuanLy
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
-            // closeButton1
-            // 
-            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton1.Location = new System.Drawing.Point(890, 15);
-            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.closeButton1.Name = "closeButton1";
-            this.closeButton1.Size = new System.Drawing.Size(40, 40);
-            this.closeButton1.TabIndex = 6;
-            // 
             // dgvClass
             // 
             this.dgvClass.AllowUserToAddRows = false;
@@ -157,6 +148,7 @@ namespace QuanLy
             this.dgvClass.ReadOnly = true;
             this.dgvClass.RowHeadersWidth = 51;
             this.dgvClass.RowTemplate.Height = 24;
+            this.dgvClass.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClass.Size = new System.Drawing.Size(950, 507);
             this.dgvClass.TabIndex = 10;
             // 
@@ -204,6 +196,15 @@ namespace QuanLy
             this.colNamHoc.Name = "colNamHoc";
             this.colNamHoc.ReadOnly = true;
             this.colNamHoc.Width = 125;
+            // 
+            // closeButton1
+            // 
+            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton1.Location = new System.Drawing.Point(890, 15);
+            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.closeButton1.Name = "closeButton1";
+            this.closeButton1.Size = new System.Drawing.Size(40, 40);
+            this.closeButton1.TabIndex = 6;
             // 
             // ClassTab
             // 

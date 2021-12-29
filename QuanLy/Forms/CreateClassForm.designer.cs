@@ -29,27 +29,27 @@ namespace QuanLy.UC_control
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNamHoc = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCapNhap = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.lblLop = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbKhoa = new System.Windows.Forms.ComboBox();
+            this.cbFaculty = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTenLop = new System.Windows.Forms.TextBox();
+            this.txtClassName = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbGiaoVien = new System.Windows.Forms.ComboBox();
+            this.cbTeacher = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // txtNamHoc
+            // txtYear
             // 
-            this.txtNamHoc.Location = new System.Drawing.Point(171, 350);
-            this.txtNamHoc.Name = "txtNamHoc";
-            this.txtNamHoc.Size = new System.Drawing.Size(278, 22);
-            this.txtNamHoc.TabIndex = 75;
+            this.txtYear.Location = new System.Drawing.Point(171, 350);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(278, 22);
+            this.txtYear.TabIndex = 75;
             // 
             // label4
             // 
@@ -61,29 +61,30 @@ namespace QuanLy.UC_control
             this.label4.TabIndex = 74;
             this.label4.Text = "Năm học";
             // 
-            // btnCapNhap
+            // btnUpdate
             // 
-            this.btnCapNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnCapNhap.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapNhap.Location = new System.Drawing.Point(171, 400);
-            this.btnCapNhap.Name = "btnCapNhap";
-            this.btnCapNhap.Size = new System.Drawing.Size(105, 41);
-            this.btnCapNhap.TabIndex = 72;
-            this.btnCapNhap.Text = "Cập nhập";
-            this.btnCapNhap.UseVisualStyleBackColor = false;
+            this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdate.Location = new System.Drawing.Point(171, 400);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(105, 41);
+            this.btnUpdate.TabIndex = 72;
+            this.btnUpdate.Text = "Cập nhập";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnThoat
+            // btnExit
             // 
-            this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnThoat.BackColor = System.Drawing.SystemColors.Control;
-            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoat.Location = new System.Drawing.Point(320, 400);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(105, 41);
-            this.btnThoat.TabIndex = 73;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Location = new System.Drawing.Point(320, 400);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(105, 41);
+            this.btnExit.TabIndex = 73;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblLop
             // 
@@ -107,13 +108,13 @@ namespace QuanLy.UC_control
             this.label3.TabIndex = 70;
             this.label3.Text = "Khoa";
             // 
-            // cbKhoa
+            // cbFaculty
             // 
-            this.cbKhoa.FormattingEnabled = true;
-            this.cbKhoa.Location = new System.Drawing.Point(171, 233);
-            this.cbKhoa.Name = "cbKhoa";
-            this.cbKhoa.Size = new System.Drawing.Size(278, 24);
-            this.cbKhoa.TabIndex = 69;
+            this.cbFaculty.FormattingEnabled = true;
+            this.cbFaculty.Location = new System.Drawing.Point(171, 233);
+            this.cbFaculty.Name = "cbFaculty";
+            this.cbFaculty.Size = new System.Drawing.Size(278, 24);
+            this.cbFaculty.TabIndex = 69;
             // 
             // label2
             // 
@@ -125,12 +126,12 @@ namespace QuanLy.UC_control
             this.label2.TabIndex = 68;
             this.label2.Text = "Tên lớp";
             // 
-            // txtTenLop
+            // txtClassName
             // 
-            this.txtTenLop.Location = new System.Drawing.Point(171, 173);
-            this.txtTenLop.Name = "txtTenLop";
-            this.txtTenLop.Size = new System.Drawing.Size(278, 22);
-            this.txtTenLop.TabIndex = 67;
+            this.txtClassName.Location = new System.Drawing.Point(171, 173);
+            this.txtClassName.Name = "txtClassName";
+            this.txtClassName.Size = new System.Drawing.Size(278, 22);
+            this.txtClassName.TabIndex = 67;
             // 
             // txtID
             // 
@@ -160,38 +161,37 @@ namespace QuanLy.UC_control
             this.label5.TabIndex = 77;
             this.label5.Text = "Giáo viên";
             // 
-            // cbGiaoVien
+            // cbTeacher
             // 
-            this.cbGiaoVien.FormattingEnabled = true;
-            this.cbGiaoVien.Location = new System.Drawing.Point(171, 294);
-            this.cbGiaoVien.Name = "cbGiaoVien";
-            this.cbGiaoVien.Size = new System.Drawing.Size(278, 24);
-            this.cbGiaoVien.TabIndex = 76;
+            this.cbTeacher.FormattingEnabled = true;
+            this.cbTeacher.Location = new System.Drawing.Point(171, 294);
+            this.cbTeacher.Name = "cbTeacher";
+            this.cbTeacher.Size = new System.Drawing.Size(278, 24);
+            this.cbTeacher.TabIndex = 76;
             // 
-            // fDKLop
+            // CreateClassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(530, 541);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbGiaoVien);
-            this.Controls.Add(this.txtNamHoc);
+            this.Controls.Add(this.cbTeacher);
+            this.Controls.Add(this.txtYear);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnCapNhap);
-            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblLop);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbKhoa);
+            this.Controls.Add(this.cbFaculty);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtTenLop);
+            this.Controls.Add(this.txtClassName);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fDKLop";
+            this.Name = "CreateClassForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDKLop";
-            this.Load += new System.EventHandler(this.fDKLop_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,18 +199,18 @@ namespace QuanLy.UC_control
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNamHoc;
+        private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnCapNhap;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblLop;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbKhoa;
+        private System.Windows.Forms.ComboBox cbFaculty;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTenLop;
+        private System.Windows.Forms.TextBox txtClassName;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbGiaoVien;
+        private System.Windows.Forms.ComboBox cbTeacher;
     }
 }

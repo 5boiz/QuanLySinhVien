@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\GetAllClass.cs" />
     <Compile Include="Controller\GetUserByID.cs" />
     <Compile Include="Controller\UpdateUser.cs" />
     <Compile Include="Controller\IsUserNameExists.cs" />
