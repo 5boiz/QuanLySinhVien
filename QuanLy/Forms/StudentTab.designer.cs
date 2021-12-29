@@ -33,10 +33,9 @@ namespace QuanLy
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnNguoiDung = new System.Windows.Forms.Panel();
-            this.txtTimKiemNguoiDung = new Guna.UI.WinForms.GunaTextBox();
-            this.btnIn = new System.Windows.Forms.Button();
+            this.txtSearchStudent = new Guna.UI.WinForms.GunaTextBox();
+            this.btnInStudent = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnReload = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.closeButton1 = new QuanLy.UC_control.CloseButton();
@@ -76,10 +75,9 @@ namespace QuanLy
             // 
             // pnbtnNguoiDung
             // 
-            this.pnbtnNguoiDung.Controls.Add(this.txtTimKiemNguoiDung);
-            this.pnbtnNguoiDung.Controls.Add(this.btnIn);
+            this.pnbtnNguoiDung.Controls.Add(this.txtSearchStudent);
+            this.pnbtnNguoiDung.Controls.Add(this.btnInStudent);
             this.pnbtnNguoiDung.Controls.Add(this.btnAdd);
-            this.pnbtnNguoiDung.Controls.Add(this.btnReload);
             this.pnbtnNguoiDung.Controls.Add(this.btnUpdate);
             this.pnbtnNguoiDung.Controls.Add(this.btnDelete);
             this.pnbtnNguoiDung.Dock = System.Windows.Forms.DockStyle.Left;
@@ -88,32 +86,32 @@ namespace QuanLy
             this.pnbtnNguoiDung.Size = new System.Drawing.Size(744, 70);
             this.pnbtnNguoiDung.TabIndex = 10;
             // 
-            // txtTimKiemNguoiDung
+            // txtSearchStudent
             // 
-            this.txtTimKiemNguoiDung.BaseColor = System.Drawing.Color.White;
-            this.txtTimKiemNguoiDung.BorderColor = System.Drawing.Color.Silver;
-            this.txtTimKiemNguoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimKiemNguoiDung.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtTimKiemNguoiDung.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
-            this.txtTimKiemNguoiDung.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTimKiemNguoiDung.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiemNguoiDung.Location = new System.Drawing.Point(380, 22);
-            this.txtTimKiemNguoiDung.Name = "txtTimKiemNguoiDung";
-            this.txtTimKiemNguoiDung.PasswordChar = '\0';
-            this.txtTimKiemNguoiDung.SelectedText = "";
-            this.txtTimKiemNguoiDung.Size = new System.Drawing.Size(234, 31);
-            this.txtTimKiemNguoiDung.TabIndex = 14;
-            this.txtTimKiemNguoiDung.Tag = "";
+            this.txtSearchStudent.BaseColor = System.Drawing.Color.White;
+            this.txtSearchStudent.BorderColor = System.Drawing.Color.Silver;
+            this.txtSearchStudent.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchStudent.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSearchStudent.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
+            this.txtSearchStudent.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearchStudent.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchStudent.Location = new System.Drawing.Point(380, 22);
+            this.txtSearchStudent.Name = "txtSearchStudent";
+            this.txtSearchStudent.PasswordChar = '\0';
+            this.txtSearchStudent.SelectedText = "";
+            this.txtSearchStudent.Size = new System.Drawing.Size(234, 31);
+            this.txtSearchStudent.TabIndex = 14;
+            this.txtSearchStudent.Tag = "";
             // 
-            // btnIn
+            // btnInStudent
             // 
-            this.btnIn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnIn.Location = new System.Drawing.Point(637, 16);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(81, 40);
-            this.btnIn.TabIndex = 13;
-            this.btnIn.Text = "In DSSV";
-            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnInStudent.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnInStudent.Location = new System.Drawing.Point(637, 16);
+            this.btnInStudent.Name = "btnInStudent";
+            this.btnInStudent.Size = new System.Drawing.Size(81, 40);
+            this.btnInStudent.TabIndex = 13;
+            this.btnInStudent.Text = "In DSSV";
+            this.btnInStudent.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
@@ -125,16 +123,6 @@ namespace QuanLy
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnReload
-            // 
-            this.btnReload.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnReload.Location = new System.Drawing.Point(263, 16);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(75, 40);
-            this.btnReload.TabIndex = 9;
-            this.btnReload.Text = "Nạp lại";
-            this.btnReload.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
@@ -156,6 +144,7 @@ namespace QuanLy
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // closeButton1
             // 
@@ -299,10 +288,9 @@ namespace QuanLy
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvStudent;
         private UC_control.CloseButton closeButton1;
         private System.Windows.Forms.Panel pnbtnNguoiDung;
-        private Guna.UI.WinForms.GunaTextBox txtTimKiemNguoiDung;
-        private System.Windows.Forms.Button btnIn;
+        private Guna.UI.WinForms.GunaTextBox txtSearchStudent;
+        private System.Windows.Forms.Button btnInStudent;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;

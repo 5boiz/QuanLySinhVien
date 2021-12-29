@@ -7,16 +7,6 @@
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "2",
-      "LoaiNguoiDung": 0
-    },
-    "2": {
-      "ID": "2",
-      "HoTen": "Nguyễn Hoài M",
-      "GioiTinh": "Nam",
-      "TenTaiKhoan": "mam",
-      "MatKhau": "123",
-      "DiaChi": "Thanh Hóa",
       "Lop": "1",
       "LoaiNguoiDung": 0
     },

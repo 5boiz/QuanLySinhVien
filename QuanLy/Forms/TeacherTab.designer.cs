@@ -29,14 +29,13 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnNguoiDung = new System.Windows.Forms.Panel();
             this.txtTimKiemNguoiDung = new Guna.UI.WinForms.GunaTextBox();
             this.btnIn = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnReload = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.closeButton1 = new QuanLy.UC_control.CloseButton();
@@ -79,7 +78,6 @@ namespace QuanLy
             this.pnbtnNguoiDung.Controls.Add(this.txtTimKiemNguoiDung);
             this.pnbtnNguoiDung.Controls.Add(this.btnIn);
             this.pnbtnNguoiDung.Controls.Add(this.btnAdd);
-            this.pnbtnNguoiDung.Controls.Add(this.btnReload);
             this.pnbtnNguoiDung.Controls.Add(this.btnUpdate);
             this.pnbtnNguoiDung.Controls.Add(this.btnDelete);
             this.pnbtnNguoiDung.Dock = System.Windows.Forms.DockStyle.Left;
@@ -125,16 +123,6 @@ namespace QuanLy
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnReload
-            // 
-            this.btnReload.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnReload.Location = new System.Drawing.Point(263, 16);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(75, 40);
-            this.btnReload.TabIndex = 9;
-            this.btnReload.Text = "Nạp lại";
-            this.btnReload.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
@@ -182,14 +170,14 @@ namespace QuanLy
             this.TenTaiKhoan,
             this.MatKhau,
             this.LoaiTaiKhoan});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTeacher.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTeacher.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTeacher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTeacher.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvTeacher.Location = new System.Drawing.Point(0, 70);
@@ -302,7 +290,6 @@ namespace QuanLy
         private Guna.UI.WinForms.GunaTextBox txtTimKiemNguoiDung;
         private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
