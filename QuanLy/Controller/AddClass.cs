@@ -8,7 +8,6 @@ using System.Windows.Forms;
 
 namespace QuanLy
 {
-   
     partial class Controller
     {
         public void AddClass(Class classs)

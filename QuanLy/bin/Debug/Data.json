@@ -9,7 +9,7 @@
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "19ct113",
+      "Lop": "1",
       "LoaiNguoiDung": "SinhVien"
     },
     "2": {
@@ -19,7 +19,7 @@
       "TenTaiKhoan": "mam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "19ct113",
+      "Lop": "1",
       "LoaiNguoiDung": "SinhVien"
     },
     "3": {
@@ -29,7 +29,7 @@
       "TenTaiKhoan": "admin",
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
-      "Lop": "19ct113",
+      "Lop": "1",
       "LoaiNguoiDung": "GiaoVien"
     }
   },

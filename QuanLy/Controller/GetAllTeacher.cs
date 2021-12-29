@@ -16,7 +16,17 @@ namespace QuanLy
             Static.mock.Data.users.Values.ToList().ForEach(u => {
                 if (u.LoaiNguoiDung == LoaiNguoiDung.GiaoVien)
                 {
-                    users.Add(u);
+                    User user = new User();
+                    user.ID = u.ID;
+                    user.HoTen = u.HoTen;
+                    user.GioiTinh = u.GioiTinh;
+                    user.TenTaiKhoan = u.TenTaiKhoan;
+                    user.MatKhau = u.MatKhau;
+                    user.LoaiNguoiDung = u.LoaiNguoiDung;
+                    user.DiaChi = u.DiaChi;
+                    user.Lop = GetClassByID(u.Lop).TenLop;
+
+                    users.Add(user);
                 }
             });
 

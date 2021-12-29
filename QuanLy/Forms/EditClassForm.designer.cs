@@ -49,7 +49,7 @@ namespace QuanLy.UC_control
             this.txtYear.Location = new System.Drawing.Point(171, 350);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(278, 22);
-            this.txtYear.TabIndex = 75;
+            this.txtYear.TabIndex = 5;
             // 
             // label4
             // 
@@ -68,7 +68,7 @@ namespace QuanLy.UC_control
             this.btnUpdate.Location = new System.Drawing.Point(171, 400);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(105, 41);
-            this.btnUpdate.TabIndex = 72;
+            this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Cập nhập";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -81,7 +81,7 @@ namespace QuanLy.UC_control
             this.btnExit.Location = new System.Drawing.Point(320, 400);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(105, 41);
-            this.btnExit.TabIndex = 73;
+            this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -123,7 +123,7 @@ namespace QuanLy.UC_control
             this.txtClassName.Location = new System.Drawing.Point(171, 173);
             this.txtClassName.Name = "txtClassName";
             this.txtClassName.Size = new System.Drawing.Size(278, 22);
-            this.txtClassName.TabIndex = 67;
+            this.txtClassName.TabIndex = 2;
             // 
             // txtID
             // 
@@ -131,7 +131,7 @@ namespace QuanLy.UC_control
             this.txtID.Location = new System.Drawing.Point(171, 109);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(278, 22);
-            this.txtID.TabIndex = 66;
+            this.txtID.TabIndex = 1;
             // 
             // label1
             // 
@@ -161,20 +161,22 @@ namespace QuanLy.UC_control
             this.cbTeacher.Location = new System.Drawing.Point(171, 294);
             this.cbTeacher.Name = "cbTeacher";
             this.cbTeacher.Size = new System.Drawing.Size(278, 24);
-            this.cbTeacher.TabIndex = 76;
+            this.cbTeacher.TabIndex = 4;
             // 
             // txtFaculty
             // 
             this.txtFaculty.Location = new System.Drawing.Point(171, 235);
             this.txtFaculty.Name = "txtFaculty";
             this.txtFaculty.Size = new System.Drawing.Size(278, 22);
-            this.txtFaculty.TabIndex = 78;
+            this.txtFaculty.TabIndex = 3;
             // 
             // EditClassForm
             // 
+            this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(530, 541);
             this.Controls.Add(this.txtFaculty);
             this.Controls.Add(this.label5);

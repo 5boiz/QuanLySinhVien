@@ -7,7 +7,7 @@
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "19ct113",
+      "Lop": "1",
       "LoaiNguoiDung": 0
     },
     "2": {
@@ -17,7 +17,7 @@
       "TenTaiKhoan": "mam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "19ct113",
+      "Lop": "2",
       "LoaiNguoiDung": 0
     },
     "3": {
@@ -27,7 +27,7 @@
       "TenTaiKhoan": "admin",
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
-      "Lop": "19ct113",
+      "Lop": "1",
       "LoaiNguoiDung": 1
     }
   },
@@ -45,15 +45,8 @@
       "Khoa": "Công Nghệ Thông Tin",
       "GiaoVien": "3",
       "NamHoc": "2020"
-    },
-    "3": {
-      "ID": "3",
-      "TenLop": "19ct113",
-      "Khoa": "CNTT",
-      "GiaoVien": "3",
-      "NamHoc": "1234"
     }
   },
   "LID": 3,
-  "LCID": 3
+  "LCID": 2
 }

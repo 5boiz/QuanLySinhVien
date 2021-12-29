@@ -39,7 +39,6 @@ namespace QuanLy
             this.btnReload = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.dgvTeacher = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +48,7 @@ namespace QuanLy
             this.TenTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.panel2.SuspendLayout();
             this.pnbtnNguoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeacher)).BeginInit();
@@ -157,16 +157,6 @@ namespace QuanLy
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // closeButton1
-            // 
-            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton1.Location = new System.Drawing.Point(938, 15);
-            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.closeButton1.Name = "closeButton1";
-            this.closeButton1.Size = new System.Drawing.Size(40, 40);
-            this.closeButton1.TabIndex = 9;
-            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
-            // 
             // dgvTeacher
             // 
             this.dgvTeacher.AllowUserToAddRows = false;
@@ -193,6 +183,7 @@ namespace QuanLy
             this.dgvTeacher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTeacher.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvTeacher.Location = new System.Drawing.Point(0, 70);
+            this.dgvTeacher.MultiSelect = false;
             this.dgvTeacher.Name = "dgvTeacher";
             this.dgvTeacher.ReadOnly = true;
             this.dgvTeacher.RowHeadersWidth = 51;
@@ -272,6 +263,16 @@ namespace QuanLy
             this.LoaiTaiKhoan.Name = "LoaiTaiKhoan";
             this.LoaiTaiKhoan.ReadOnly = true;
             this.LoaiTaiKhoan.Width = 125;
+            // 
+            // closeButton1
+            // 
+            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton1.Location = new System.Drawing.Point(938, 15);
+            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.closeButton1.Name = "closeButton1";
+            this.closeButton1.Size = new System.Drawing.Size(40, 40);
+            this.closeButton1.TabIndex = 9;
+            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
             // 
             // TeacherTab
             // 
