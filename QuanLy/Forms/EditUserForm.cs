@@ -25,7 +25,10 @@ namespace QuanLy.Forms
             txtFullName.Text = user.HoTen;
             cbGender.SelectedItem = user.GioiTinh;
             txtAddress.Text = user.DiaChi;
-            cbClass.SelectedItem = user.Lop;
+            cbClass.DataSource = Static.controller.GetAllClass();
+            cbClass.DisplayMember = "TenLop";
+            cbClass.ValueMember = "ID";
+            cbClass.SelectedValue = user.Lop;
             txtUserName.Text = user.TenTaiKhoan;
             txtPassWord.Text = user.MatKhau;
             cbType.SelectedItem = user.LoaiNguoiDung;
@@ -42,7 +45,7 @@ namespace QuanLy.Forms
             user.ID = txtID.Text;
             user.HoTen = txtFullName.Text;
             user.GioiTinh = cbGender.SelectedItem.ToString();
-            user.Lop = cbClass.SelectedItem.ToString();
+            user.Lop = cbClass.SelectedValue.ToString();
             user.TenTaiKhoan = txtUserName.Text;
             user.MatKhau = txtPassWord.Text;
             user.DiaChi = txtAddress.Text;

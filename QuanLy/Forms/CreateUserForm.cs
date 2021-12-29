@@ -18,6 +18,11 @@ namespace QuanLy.Forms
             InitializeComponent();
             cbType.DataSource = Enum.GetValues(typeof(LoaiNguoiDung));
             cbType.SelectedItem = loaiNguoiDung;
+
+            cbClass.DataSource = Static.controller.GetAllClass();
+            cbClass.DisplayMember = "TenLop";
+            cbClass.SelectedIndex = 0;
+
             txtID.Text = (Static.controller.GetLastID() + 1).ToString();
             txtID.Enabled = false;
             cbType.Enabled = false;
@@ -36,7 +41,7 @@ namespace QuanLy.Forms
             user.ID = txtID.Text;
             user.HoTen = txtFullName.Text;
             user.GioiTinh = cbGender.SelectedItem.ToString();
-            user.Lop = cbClass.SelectedItem.ToString();
+            user.Lop = ((Class)cbClass.SelectedItem).ID;
             user.TenTaiKhoan = txtUserName.Text;
             user.MatKhau = txtPassWord.Text;
             user.DiaChi = txtAddress.Text;
