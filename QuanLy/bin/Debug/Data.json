@@ -49,7 +49,7 @@
       "TenTaiKhoan": "co",
       "MatKhau": "admin",
       "DiaChi": "Hà Nội",
-      "Lop": "2",
+      "Lop": "3",
       "LoaiNguoiDung": "GiaoVien"
     }
   },
@@ -65,7 +65,14 @@
       "ID": "2",
       "TenLop": "19ct114",
       "Khoa": "Công Nghệ Thông Tin",
-      "GiaoVien": "3",
+      "GiaoVien": "4",
+      "NamHoc": "2020"
+    },
+    "3": {
+      "ID": "3",
+      "TenLop": "19ct112",
+      "Khoa": "Công Nghệ Thông Tin",
+      "GiaoVien": "5",
       "NamHoc": "2020"
     }
   }

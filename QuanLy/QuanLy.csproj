@@ -71,6 +71,8 @@
   <ItemGroup>
     <Compile Include="Controller\AddClass.cs" />
     <Compile Include="Controller\DeleteClass.cs" />
+    <Compile Include="Controller\IsClassEmpty.cs" />
+    <Compile Include="Controller\IsTeacherHaveClass.cs" />
     <Compile Include="Controller\DeleteUser.cs" />
     <Compile Include="Controller\GetAllClass.cs" />
     <Compile Include="Controller\GetClassByID.cs" />

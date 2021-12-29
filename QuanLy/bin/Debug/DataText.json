@@ -10,6 +10,16 @@
       "Lop": "1",
       "LoaiNguoiDung": 0
     },
+    "2": {
+      "ID": "2",
+      "HoTen": "Nguyễn Hoài M",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "mam",
+      "MatKhau": "123",
+      "DiaChi": "Thanh Hóa",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
     "3": {
       "ID": "3",
       "HoTen": "Phan Thị Hường",
@@ -37,7 +47,7 @@
       "TenTaiKhoan": "co",
       "MatKhau": "admin",
       "DiaChi": "Hà Nội",
-      "Lop": "2",
+      "Lop": "1",
       "LoaiNguoiDung": 1
     }
   },
@@ -53,7 +63,7 @@
       "ID": "2",
       "TenLop": "19ct114",
       "Khoa": "Công Nghệ Thông Tin",
-      "GiaoVien": "3",
+      "GiaoVien": "4",
       "NamHoc": "2020"
     }
   },
