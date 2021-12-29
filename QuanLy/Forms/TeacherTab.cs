@@ -1,4 +1,6 @@
 ﻿
+using QuanLy.Forms;
+using QuanLy.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +35,26 @@ namespace QuanLy
         private void closeButton1_Click_1(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            CreateUserForm createUserForm = new CreateUserForm(LoaiNguoiDung.GiaoVien);
+            createUserForm.Show();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dgvTeacher.SelectedRows[0];
+            string ID = row.Cells[0].Value.ToString();
+            User user = Static.controller.GetUserByID(ID);
+            if (user == null)
+            {
+                MessageBox.Show("Có lỗi!!!! Người dùng không tồn tại.");
+                return;
+            }
+            EditUserForm editUserForm = new EditUserForm(user);
+            editUserForm.ShowDialog();
         }
     }
 }
