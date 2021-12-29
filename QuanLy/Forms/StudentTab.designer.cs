@@ -150,7 +150,7 @@ namespace QuanLy
             // btnDelete
             // 
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(182, 15);
+            this.btnDelete.Location = new System.Drawing.Point(182, 16);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 40);
             this.btnDelete.TabIndex = 10;

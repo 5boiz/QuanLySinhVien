@@ -7,7 +7,7 @@
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "1",
+      "Lop": "2",
       "LoaiNguoiDung": 0
     },
     "2": {
@@ -17,7 +17,7 @@
       "TenTaiKhoan": "mam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "2",
+      "Lop": "1",
       "LoaiNguoiDung": 0
     },
     "3": {
@@ -28,6 +28,26 @@
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
+      "LoaiNguoiDung": 1
+    },
+    "4": {
+      "ID": "4",
+      "HoTen": "Nguyễn Văn Thầy",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "thay",
+      "MatKhau": "admin",
+      "DiaChi": "Đồng Nai",
+      "Lop": "2",
+      "LoaiNguoiDung": 1
+    },
+    "5": {
+      "ID": "5",
+      "HoTen": "Phạm Thị Cô",
+      "GioiTinh": "Nữ",
+      "TenTaiKhoan": "co",
+      "MatKhau": "admin",
+      "DiaChi": "Hà Nội",
+      "Lop": "2",
       "LoaiNguoiDung": 1
     }
   },
@@ -47,6 +67,6 @@
       "NamHoc": "2020"
     }
   },
-  "LID": 3,
+  "LID": 5,
   "LCID": 2
 }

@@ -1,5 +1,5 @@
 {
-  "LID": 3,
+  "LID": 5,
   "LCID": 2,
   "users": {
     "1": {
@@ -30,6 +30,26 @@
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
+      "LoaiNguoiDung": "GiaoVien"
+    },
+    "4": {
+      "ID": "4",
+      "HoTen": "Nguyễn Văn Thầy",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "thay",
+      "MatKhau": "admin",
+      "DiaChi": "Đồng Nai",
+      "Lop": "2",
+      "LoaiNguoiDung": "GiaoVien"
+    },
+    "5": {
+      "ID": "5",
+      "HoTen": "Phạm Thị Cô",
+      "GioiTinh": "Nữ",
+      "TenTaiKhoan": "co",
+      "MatKhau": "admin",
+      "DiaChi": "Hà Nội",
+      "Lop": "2",
       "LoaiNguoiDung": "GiaoVien"
     }
   },

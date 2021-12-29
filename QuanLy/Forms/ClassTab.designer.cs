@@ -29,23 +29,23 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnbtnLopHoc = new System.Windows.Forms.Panel();
+            this.pnbtnMenu = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnReload = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.dgvClass = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaoVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.panel2.SuspendLayout();
-            this.pnbtnLopHoc.SuspendLayout();
+            this.pnbtnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@ namespace QuanLy
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
-            this.panel2.Controls.Add(this.pnbtnLopHoc);
+            this.panel2.Controls.Add(this.pnbtnMenu);
             this.panel2.Controls.Add(this.closeButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -69,17 +69,17 @@ namespace QuanLy
             this.panel2.Size = new System.Drawing.Size(950, 70);
             this.panel2.TabIndex = 9;
             // 
-            // pnbtnLopHoc
+            // pnbtnMenu
             // 
-            this.pnbtnLopHoc.Controls.Add(this.btnAdd);
-            this.pnbtnLopHoc.Controls.Add(this.btnReload);
-            this.pnbtnLopHoc.Controls.Add(this.btnUpdate);
-            this.pnbtnLopHoc.Controls.Add(this.btnDelete);
-            this.pnbtnLopHoc.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnbtnLopHoc.Location = new System.Drawing.Point(0, 0);
-            this.pnbtnLopHoc.Name = "pnbtnLopHoc";
-            this.pnbtnLopHoc.Size = new System.Drawing.Size(483, 70);
-            this.pnbtnLopHoc.TabIndex = 7;
+            this.pnbtnMenu.Controls.Add(this.btnAdd);
+            this.pnbtnMenu.Controls.Add(this.btnReload);
+            this.pnbtnMenu.Controls.Add(this.btnUpdate);
+            this.pnbtnMenu.Controls.Add(this.btnDelete);
+            this.pnbtnMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnbtnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnbtnMenu.Name = "pnbtnMenu";
+            this.pnbtnMenu.Size = new System.Drawing.Size(483, 70);
+            this.pnbtnMenu.TabIndex = 7;
             // 
             // btnAdd
             // 
@@ -123,15 +123,6 @@ namespace QuanLy
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // closeButton1
-            // 
-            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton1.Location = new System.Drawing.Point(890, 15);
-            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.closeButton1.Name = "closeButton1";
-            this.closeButton1.Size = new System.Drawing.Size(40, 40);
-            this.closeButton1.TabIndex = 6;
-            // 
             // dgvClass
             // 
             this.dgvClass.AllowUserToAddRows = false;
@@ -144,14 +135,14 @@ namespace QuanLy
             this.Khoa,
             this.GiaoVien,
             this.NamHoc});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClass.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClass.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvClass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvClass.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvClass.Location = new System.Drawing.Point(0, 70);
@@ -194,11 +185,11 @@ namespace QuanLy
             // GiaoVien
             // 
             this.GiaoVien.DataPropertyName = "GiaoVien";
-            this.GiaoVien.HeaderText = "Giáo Viên phụ trách";
+            this.GiaoVien.HeaderText = "Giáo Viên CN";
             this.GiaoVien.MinimumWidth = 6;
             this.GiaoVien.Name = "GiaoVien";
             this.GiaoVien.ReadOnly = true;
-            this.GiaoVien.Width = 125;
+            this.GiaoVien.Width = 150;
             // 
             // NamHoc
             // 
@@ -208,6 +199,15 @@ namespace QuanLy
             this.NamHoc.Name = "NamHoc";
             this.NamHoc.ReadOnly = true;
             this.NamHoc.Width = 125;
+            // 
+            // closeButton1
+            // 
+            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton1.Location = new System.Drawing.Point(890, 15);
+            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.closeButton1.Name = "closeButton1";
+            this.closeButton1.Size = new System.Drawing.Size(40, 40);
+            this.closeButton1.TabIndex = 6;
             // 
             // ClassTab
             // 
@@ -221,7 +221,7 @@ namespace QuanLy
             this.Name = "ClassTab";
             this.Text = "fQuanLyLop";
             this.panel2.ResumeLayout(false);
-            this.pnbtnLopHoc.ResumeLayout(false);
+            this.pnbtnMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).EndInit();
             this.ResumeLayout(false);
 
@@ -232,7 +232,7 @@ namespace QuanLy
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvClass;
         private UC_control.CloseButton closeButton1;
-        private System.Windows.Forms.Panel pnbtnLopHoc;
+        private System.Windows.Forms.Panel pnbtnMenu;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button btnUpdate;

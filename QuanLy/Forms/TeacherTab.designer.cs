@@ -39,6 +39,7 @@ namespace QuanLy
             this.btnReload = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.dgvTeacher = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +49,6 @@ namespace QuanLy
             this.TenTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.panel2.SuspendLayout();
             this.pnbtnNguoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeacher)).BeginInit();
@@ -108,7 +108,7 @@ namespace QuanLy
             // btnIn
             // 
             this.btnIn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnIn.Location = new System.Drawing.Point(637, 16);
+            this.btnIn.Location = new System.Drawing.Point(638, 16);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(81, 40);
             this.btnIn.TabIndex = 13;
@@ -150,12 +150,22 @@ namespace QuanLy
             // btnDelete
             // 
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(182, 15);
+            this.btnDelete.Location = new System.Drawing.Point(182, 16);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 40);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // closeButton1
+            // 
+            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton1.Location = new System.Drawing.Point(938, 15);
+            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.closeButton1.Name = "closeButton1";
+            this.closeButton1.Size = new System.Drawing.Size(40, 40);
+            this.closeButton1.TabIndex = 9;
+            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
             // 
             // dgvTeacher
             // 
@@ -263,16 +273,6 @@ namespace QuanLy
             this.LoaiTaiKhoan.Name = "LoaiTaiKhoan";
             this.LoaiTaiKhoan.ReadOnly = true;
             this.LoaiTaiKhoan.Width = 125;
-            // 
-            // closeButton1
-            // 
-            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton1.Location = new System.Drawing.Point(938, 15);
-            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.closeButton1.Name = "closeButton1";
-            this.closeButton1.Size = new System.Drawing.Size(40, 40);
-            this.closeButton1.TabIndex = 9;
-            this.closeButton1.Click += new System.EventHandler(this.closeButton1_Click_1);
             // 
             // TeacherTab
             // 

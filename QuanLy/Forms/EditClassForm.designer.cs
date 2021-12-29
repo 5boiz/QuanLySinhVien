@@ -93,7 +93,7 @@ namespace QuanLy.UC_control
             this.lblLop.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLop.Location = new System.Drawing.Point(0, 0);
             this.lblLop.Name = "lblLop";
-            this.lblLop.Size = new System.Drawing.Size(530, 55);
+            this.lblLop.Size = new System.Drawing.Size(525, 55);
             this.lblLop.TabIndex = 71;
             this.lblLop.Text = "Lớp";
             this.lblLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -177,7 +177,7 @@ namespace QuanLy.UC_control
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(530, 541);
+            this.ClientSize = new System.Drawing.Size(525, 517);
             this.Controls.Add(this.txtFaculty);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbTeacher);

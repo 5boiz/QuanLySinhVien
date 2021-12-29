@@ -65,7 +65,7 @@ namespace QuanLy
             // gunaLabel2
             // 
             this.gunaLabel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaLabel2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(0, 0);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(274, 80);
@@ -75,6 +75,7 @@ namespace QuanLy
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.BorderColor = System.Drawing.Color.White;
             this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMatKhau.DefaultText = "";
             this.txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -84,7 +85,7 @@ namespace QuanLy
             this.txtMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.FocusedState.Parent = this.txtMatKhau;
-            this.txtMatKhau.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.HoverState.Parent = this.txtMatKhau;
             this.txtMatKhau.IconLeft = global::QuanLy.Properties.Resources.key_32px;
@@ -101,6 +102,7 @@ namespace QuanLy
             // 
             // txtTaiKhoan
             // 
+            this.txtTaiKhoan.BorderColor = System.Drawing.Color.White;
             this.txtTaiKhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTaiKhoan.DefaultText = "";
             this.txtTaiKhoan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -110,7 +112,7 @@ namespace QuanLy
             this.txtTaiKhoan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTaiKhoan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTaiKhoan.FocusedState.Parent = this.txtTaiKhoan;
-            this.txtTaiKhoan.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTaiKhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTaiKhoan.HoverState.Parent = this.txtTaiKhoan;
             this.txtTaiKhoan.IconLeft = global::QuanLy.Properties.Resources.account_32px;
@@ -127,7 +129,7 @@ namespace QuanLy
             // chbHienMatKhau
             // 
             this.chbHienMatKhau.AutoSize = true;
-            this.chbHienMatKhau.Location = new System.Drawing.Point(29, 196);
+            this.chbHienMatKhau.Location = new System.Drawing.Point(29, 202);
             this.chbHienMatKhau.Name = "chbHienMatKhau";
             this.chbHienMatKhau.Size = new System.Drawing.Size(140, 21);
             this.chbHienMatKhau.TabIndex = 3;
@@ -158,6 +160,7 @@ namespace QuanLy
             // btnThoat
             // 
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnThoat.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuText;
             this.btnThoat.Location = new System.Drawing.Point(142, 231);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(95, 35);
@@ -168,6 +171,7 @@ namespace QuanLy
             // 
             // btnDangNhap
             // 
+            this.btnDangNhap.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnDangNhap.Location = new System.Drawing.Point(29, 231);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(95, 35);
@@ -190,7 +194,7 @@ namespace QuanLy
             // gunaLabel1
             // 
             this.gunaLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaLabel1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(0, 0);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(355, 78);
@@ -210,7 +214,7 @@ namespace QuanLy
             this.guna2Panel1.Size = new System.Drawing.Size(355, 247);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // fLogin
+            // LoginForm
             // 
             this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -220,7 +224,7 @@ namespace QuanLy
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fLogin";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fLogin";
             this.Load += new System.EventHandler(this.fLogin_Load);
