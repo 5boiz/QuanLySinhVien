@@ -7,7 +7,7 @@
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
-      "Lop": "2",
+      "Lop": "1",
       "LoaiNguoiDung": 0
     },
     "2": {
@@ -47,7 +47,7 @@
       "TenTaiKhoan": "co",
       "MatKhau": "admin",
       "DiaChi": "Hà Nội",
-      "Lop": "2",
+      "Lop": "1",
       "LoaiNguoiDung": 1
     }
   },
@@ -63,7 +63,7 @@
       "ID": "2",
       "TenLop": "19ct114",
       "Khoa": "Công Nghệ Thông Tin",
-      "GiaoVien": "3",
+      "GiaoVien": "4",
       "NamHoc": "2020"
     }
   },

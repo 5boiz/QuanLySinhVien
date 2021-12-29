@@ -56,5 +56,29 @@ namespace QuanLy
             EditUserForm editUserForm = new EditUserForm(user);
             editUserForm.ShowDialog();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dgvTeacher.SelectedRows[0];
+
+            string ID = row.Cells[0].Value.ToString();
+
+            if (ID == null)
+            {
+                MessageBox.Show("Có lỗi!!!! Cần chọn người dùng để xóa.");
+                return;
+            }
+            if (Static.controller.IsTeacherHaveClass(ID))
+            {
+                MessageBox.Show("Giáo viên này đang chủ nhiệm lớp, không thể xóa.");
+                return;
+            }
+            DialogResult result = MessageBox.Show("Bạn có chắc xóa tài khoản [" + Static.controller.GetUserByID(ID).HoTen + "] không!!!", "Thông báo", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Static.controller.DeleteUser(ID);
+                MessageBox.Show("Xóa tài khoản thành công.");
+            }
+        }
     }
 }

@@ -46,5 +46,29 @@ namespace QuanLy
             EditClassForm editClassForm = new EditClassForm(classs);
             editClassForm.ShowDialog();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dgvClass.SelectedRows[0];
+
+            string ID = row.Cells[0].Value.ToString();
+
+            if (ID == null)
+            {
+                MessageBox.Show("Có lỗi!!!! Cần chọn lớp để xóa.");
+                return;
+            }
+            if (!Static.controller.IsClassEmpty(ID))
+            {
+                MessageBox.Show("Lớp này đang có người học, không thể xóa.");
+                return;
+            }
+            DialogResult result = MessageBox.Show("Bạn có chắc xóa lớp [" + Static.controller.GetClassByID(ID).TenLop + "] không!!!", "Thông báo", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                Static.controller.DeleteClass(ID);
+                MessageBox.Show("Xóa lớp thành công.");
+            }
+        }
     }
 }
