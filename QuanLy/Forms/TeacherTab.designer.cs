@@ -35,10 +35,10 @@ namespace QuanLy
             this.pnbtnNguoiDung = new System.Windows.Forms.Panel();
             this.txtTimKiemNguoiDung = new Guna.UI.WinForms.GunaTextBox();
             this.btnIn = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnNapLai = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.dgvTeacher = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,10 +78,10 @@ namespace QuanLy
             // 
             this.pnbtnNguoiDung.Controls.Add(this.txtTimKiemNguoiDung);
             this.pnbtnNguoiDung.Controls.Add(this.btnIn);
-            this.pnbtnNguoiDung.Controls.Add(this.btnThem);
-            this.pnbtnNguoiDung.Controls.Add(this.btnNapLai);
-            this.pnbtnNguoiDung.Controls.Add(this.btnSua);
-            this.pnbtnNguoiDung.Controls.Add(this.btnXoa);
+            this.pnbtnNguoiDung.Controls.Add(this.btnAdd);
+            this.pnbtnNguoiDung.Controls.Add(this.btnReload);
+            this.pnbtnNguoiDung.Controls.Add(this.btnUpdate);
+            this.pnbtnNguoiDung.Controls.Add(this.btnDelete);
             this.pnbtnNguoiDung.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnbtnNguoiDung.Location = new System.Drawing.Point(0, 0);
             this.pnbtnNguoiDung.Name = "pnbtnNguoiDung";
@@ -115,45 +115,47 @@ namespace QuanLy
             this.btnIn.Text = "In DSSV";
             this.btnIn.UseVisualStyleBackColor = true;
             // 
-            // btnThem
+            // btnAdd
             // 
-            this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnThem.Location = new System.Drawing.Point(20, 16);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 40);
-            this.btnThem.TabIndex = 12;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAdd.Location = new System.Drawing.Point(20, 16);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 40);
+            this.btnAdd.TabIndex = 12;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnNapLai
+            // btnReload
             // 
-            this.btnNapLai.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnNapLai.Location = new System.Drawing.Point(263, 16);
-            this.btnNapLai.Name = "btnNapLai";
-            this.btnNapLai.Size = new System.Drawing.Size(75, 40);
-            this.btnNapLai.TabIndex = 9;
-            this.btnNapLai.Text = "Nạp lại";
-            this.btnNapLai.UseVisualStyleBackColor = true;
+            this.btnReload.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnReload.Location = new System.Drawing.Point(263, 16);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(75, 40);
+            this.btnReload.TabIndex = 9;
+            this.btnReload.Text = "Nạp lại";
+            this.btnReload.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // btnUpdate
             // 
-            this.btnSua.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSua.Location = new System.Drawing.Point(101, 16);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 40);
-            this.btnSua.TabIndex = 11;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnUpdate.Location = new System.Drawing.Point(101, 16);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 40);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Sửa";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnXoa
+            // btnDelete
             // 
-            this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnXoa.Location = new System.Drawing.Point(182, 15);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 40);
-            this.btnXoa.TabIndex = 10;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDelete.Location = new System.Drawing.Point(182, 15);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 40);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // closeButton1
             // 
@@ -195,6 +197,7 @@ namespace QuanLy
             this.dgvTeacher.ReadOnly = true;
             this.dgvTeacher.RowHeadersWidth = 51;
             this.dgvTeacher.RowTemplate.Height = 24;
+            this.dgvTeacher.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTeacher.Size = new System.Drawing.Size(998, 483);
             this.dgvTeacher.TabIndex = 11;
             // 
@@ -297,10 +300,10 @@ namespace QuanLy
         private System.Windows.Forms.Panel pnbtnNguoiDung;
         private Guna.UI.WinForms.GunaTextBox txtTimKiemNguoiDung;
         private System.Windows.Forms.Button btnIn;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnNapLai;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lop;

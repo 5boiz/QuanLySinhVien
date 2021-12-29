@@ -29,21 +29,21 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnLopHoc = new System.Windows.Forms.Panel();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnNapLai = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.dgvClass = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaoVienCN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.closeButton1 = new QuanLy.UC_control.CloseButton();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaoVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.pnbtnLopHoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
@@ -71,55 +71,88 @@ namespace QuanLy
             // 
             // pnbtnLopHoc
             // 
-            this.pnbtnLopHoc.Controls.Add(this.btnThem);
-            this.pnbtnLopHoc.Controls.Add(this.btnNapLai);
-            this.pnbtnLopHoc.Controls.Add(this.btnSua);
-            this.pnbtnLopHoc.Controls.Add(this.btnXoa);
+            this.pnbtnLopHoc.Controls.Add(this.btnAdd);
+            this.pnbtnLopHoc.Controls.Add(this.btnReload);
+            this.pnbtnLopHoc.Controls.Add(this.btnUpdate);
+            this.pnbtnLopHoc.Controls.Add(this.btnDelete);
             this.pnbtnLopHoc.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnbtnLopHoc.Location = new System.Drawing.Point(0, 0);
             this.pnbtnLopHoc.Name = "pnbtnLopHoc";
             this.pnbtnLopHoc.Size = new System.Drawing.Size(483, 70);
             this.pnbtnLopHoc.TabIndex = 7;
             // 
-            // btnThem
+            // btnAdd
             // 
-            this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnThem.Location = new System.Drawing.Point(20, 15);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 40);
-            this.btnThem.TabIndex = 9;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnAdd.Location = new System.Drawing.Point(20, 15);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 40);
+            this.btnAdd.TabIndex = 9;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnNapLai
+            // btnReload
             // 
-            this.btnNapLai.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnNapLai.Location = new System.Drawing.Point(263, 15);
-            this.btnNapLai.Name = "btnNapLai";
-            this.btnNapLai.Size = new System.Drawing.Size(75, 40);
-            this.btnNapLai.TabIndex = 6;
-            this.btnNapLai.Text = "Nạp lại";
-            this.btnNapLai.UseVisualStyleBackColor = true;
+            this.btnReload.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnReload.Location = new System.Drawing.Point(263, 15);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(75, 40);
+            this.btnReload.TabIndex = 6;
+            this.btnReload.Text = "Nạp lại";
+            this.btnReload.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // btnUpdate
             // 
-            this.btnSua.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSua.Location = new System.Drawing.Point(101, 15);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 40);
-            this.btnSua.TabIndex = 8;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnUpdate.Location = new System.Drawing.Point(101, 15);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 40);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.Text = "Sửa";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnXoa
+            // btnDelete
             // 
-            this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnXoa.Location = new System.Drawing.Point(182, 15);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 40);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDelete.Location = new System.Drawing.Point(182, 15);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 40);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // dgvClass
+            // 
+            this.dgvClass.AllowUserToAddRows = false;
+            this.dgvClass.AllowUserToDeleteRows = false;
+            this.dgvClass.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.TenLop,
+            this.Khoa,
+            this.GiaoVien,
+            this.NamHoc});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClass.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvClass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvClass.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvClass.Location = new System.Drawing.Point(0, 70);
+            this.dgvClass.Name = "dgvClass";
+            this.dgvClass.ReadOnly = true;
+            this.dgvClass.RowHeadersWidth = 51;
+            this.dgvClass.RowTemplate.Height = 24;
+            this.dgvClass.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvClass.Size = new System.Drawing.Size(950, 507);
+            this.dgvClass.TabIndex = 10;
             // 
             // closeButton1
             // 
@@ -130,80 +163,50 @@ namespace QuanLy
             this.closeButton1.Size = new System.Drawing.Size(40, 40);
             this.closeButton1.TabIndex = 6;
             // 
-            // dgvClass
+            // ID
             // 
-            this.dgvClass.AllowUserToAddRows = false;
-            this.dgvClass.AllowUserToDeleteRows = false;
-            this.dgvClass.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colID,
-            this.colTenLop,
-            this.colKhoa,
-            this.GiaoVienCN,
-            this.colNamHoc});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClass.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvClass.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvClass.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgvClass.Location = new System.Drawing.Point(0, 70);
-            this.dgvClass.Name = "dgvClass";
-            this.dgvClass.ReadOnly = true;
-            this.dgvClass.RowHeadersWidth = 51;
-            this.dgvClass.RowTemplate.Height = 24;
-            this.dgvClass.Size = new System.Drawing.Size(950, 507);
-            this.dgvClass.TabIndex = 10;
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 125;
             // 
-            // colID
+            // TenLop
             // 
-            this.colID.DataPropertyName = "ID";
-            this.colID.HeaderText = "ID";
-            this.colID.MinimumWidth = 6;
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Width = 125;
+            this.TenLop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenLop.DataPropertyName = "TenLop";
+            this.TenLop.HeaderText = "Tên lớp";
+            this.TenLop.MinimumWidth = 6;
+            this.TenLop.Name = "TenLop";
+            this.TenLop.ReadOnly = true;
             // 
-            // colTenLop
+            // Khoa
             // 
-            this.colTenLop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colTenLop.DataPropertyName = "TenLop";
-            this.colTenLop.HeaderText = "Tên lớp";
-            this.colTenLop.MinimumWidth = 6;
-            this.colTenLop.Name = "colTenLop";
-            this.colTenLop.ReadOnly = true;
+            this.Khoa.DataPropertyName = "Khoa";
+            this.Khoa.HeaderText = "Khoa";
+            this.Khoa.MinimumWidth = 6;
+            this.Khoa.Name = "Khoa";
+            this.Khoa.ReadOnly = true;
+            this.Khoa.Width = 200;
             // 
-            // colKhoa
+            // GiaoVien
             // 
-            this.colKhoa.DataPropertyName = "Khoa";
-            this.colKhoa.HeaderText = "Khoa";
-            this.colKhoa.MinimumWidth = 6;
-            this.colKhoa.Name = "colKhoa";
-            this.colKhoa.ReadOnly = true;
-            this.colKhoa.Width = 200;
+            this.GiaoVien.DataPropertyName = "GiaoVien";
+            this.GiaoVien.HeaderText = "Giáo Viên phụ trách";
+            this.GiaoVien.MinimumWidth = 6;
+            this.GiaoVien.Name = "GiaoVien";
+            this.GiaoVien.ReadOnly = true;
+            this.GiaoVien.Width = 125;
             // 
-            // GiaoVienCN
+            // NamHoc
             // 
-            this.GiaoVienCN.DataPropertyName = "GiaoVienCN";
-            this.GiaoVienCN.HeaderText = "Giáo Viên phụ trách";
-            this.GiaoVienCN.MinimumWidth = 6;
-            this.GiaoVienCN.Name = "GiaoVienCN";
-            this.GiaoVienCN.ReadOnly = true;
-            this.GiaoVienCN.Width = 125;
-            // 
-            // colNamHoc
-            // 
-            this.colNamHoc.DataPropertyName = "NamHoc";
-            this.colNamHoc.HeaderText = "Năm học";
-            this.colNamHoc.MinimumWidth = 6;
-            this.colNamHoc.Name = "colNamHoc";
-            this.colNamHoc.ReadOnly = true;
-            this.colNamHoc.Width = 125;
+            this.NamHoc.DataPropertyName = "NamHoc";
+            this.NamHoc.HeaderText = "Năm học";
+            this.NamHoc.MinimumWidth = 6;
+            this.NamHoc.Name = "NamHoc";
+            this.NamHoc.ReadOnly = true;
+            this.NamHoc.Width = 125;
             // 
             // ClassTab
             // 
@@ -228,15 +231,15 @@ namespace QuanLy
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvClass;
         private UC_control.CloseButton closeButton1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTenLop;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colKhoa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaoVienCN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNamHoc;
         private System.Windows.Forms.Panel pnbtnLopHoc;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnNapLai;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Khoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaoVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamHoc;
     }
 }

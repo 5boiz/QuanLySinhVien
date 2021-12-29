@@ -9,6 +9,9 @@ namespace QuanLy.Models
     public class Class
     {
         public string ID { get; set; }
+        public string TenLop { get; set; }
         public string Khoa { get; set; }
+        public string GiaoVien { get; set; }
+        public string NamHoc { get; set; }
     }
 }

@@ -2,17 +2,17 @@
   "users": {
     "1": {
       "ID": "1",
-      "HoTen": "Nguyễn Hoài Nam",
+      "HoTen": "Nguyễn Hoài N",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
       "Lop": "19ct113",
-      "LoaiNguoiDung": 1
+      "LoaiNguoiDung": 0
     },
     "2": {
       "ID": "2",
-      "HoTen": "Nguyễn Hoài Nam2",
+      "HoTen": "Nguyễn Hoài M",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "mam",
       "MatKhau": "123",
@@ -32,10 +32,21 @@
     }
   },
   "classes": {
-    "19ct113": {
-      "ID": "19ct113",
-      "Khoa": "Công Nghệ Thông Tin"
+    "1": {
+      "ID": "1",
+      "TenLop": "19ct113",
+      "Khoa": "Công Nghệ Thông Tin",
+      "GiaoVien": "Phan Thị Hường",
+      "NamHoc": "2020"
+    },
+    "2": {
+      "ID": "2",
+      "TenLop": "19ct113",
+      "Khoa": "qưeqwe",
+      "GiaoVien": "Nguyễn Hoài A",
+      "NamHoc": "12312"
     }
   },
-  "LID": 3
+  "LID": 3,
+  "LCID": 2
 }
