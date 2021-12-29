@@ -22,30 +22,31 @@
     },
     "3": {
       "ID": "3",
-      "HoTen": "Nguyễn Hoài An",
+      "HoTen": "Nguyễn Hoài A",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "admin",
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
       "Lop": "19ct113",
       "LoaiNguoiDung": 1
-    },
-    "4": {
-      "ID": "4",
-      "HoTen": "Phan Thị Hường",
-      "GioiTinh": "Nữ",
-      "TenTaiKhoan": "huong",
-      "MatKhau": "123",
-      "DiaChi": "Biên Hòa",
-      "Lop": "19CT113",
-      "LoaiNguoiDung": 1
     }
   },
   "classes": {
-    "19ct113": {
-      "ID": "19ct113",
-      "Khoa": "Công Nghệ Thông Tin"
+    "1": {
+      "ID": "1",
+      "TenLop": "19ct113",
+      "Khoa": "Công Nghệ Thông Tin",
+      "GiaoVien": "Phan Thị Hường",
+      "NamHoc": "2020"
+    },
+    "2": {
+      "ID": "2",
+      "TenLop": "19ct113",
+      "Khoa": "qưeqwe",
+      "GiaoVien": "Nguyễn Hoài A",
+      "NamHoc": "12312"
     }
   },
-  "LID": 4
+  "LID": 3,
+  "LCID": 2
 }

@@ -12,22 +12,26 @@ using System.Windows.Forms;
 
 namespace QuanLy.UC_control
 {
-    public partial class CreateClassForm : Form
+    public partial class EditClassForm : Form
     {
-        public CreateClassForm()
+        Class classs;
+        public EditClassForm(Class value)
         {
             InitializeComponent();
 
-            txtID.Text = (Static.controller.GetLastClassID() + 1).ToString();
-            txtID.Enabled = false;
+            classs = value;
+            txtID.Text = classs.ID;
+            txtClassName.Text = classs.TenLop;
+            txtFaculty.Text = classs.Khoa;
             cbTeacher.DataSource = Static.controller.GetAllTeacher();
             cbTeacher.DisplayMember = "HoTen";
-            cbTeacher.SelectedIndex = 0;
+            cbTeacher.SelectedItem = Static.controller.GetUserByName(value.GiaoVien);
+            txtYear.Text = classs.NamHoc;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Class classs = new Class();
+            
             classs.ID = txtID.Text;
             classs.TenLop = txtClassName.Text;
             classs.Khoa = txtFaculty.Text;
@@ -40,14 +44,9 @@ namespace QuanLy.UC_control
                 MessageBox.Show("Thông tin không được để trống");
                 return;
             }
-            if (Static.controller.IsClassNameExists(classs.TenLop))
-            {
-                MessageBox.Show("Tên lớp đã được sử dụng");
-                return;
-            }
 
-            Static.controller.AddClass(classs);
-            MessageBox.Show("Tạo thành công");
+            Static.controller.UpdateClass(classs);
+            MessageBox.Show("Cập nhập thành công");
         }
 
         private void btnExit_Click(object sender, EventArgs e)

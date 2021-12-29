@@ -1,5 +1,6 @@
 {
   "LID": 3,
+  "LCID": 1,
   "users": {
     "1": {
       "ID": "1",
@@ -33,9 +34,12 @@
     }
   },
   "classes": {
-    "19ct113": {
-      "ID": "19ct113",
-      "Khoa": "Công Nghệ Thông Tin"
+    "1": {
+      "ID": "1",
+      "TenLop": "19ct113",
+      "Khoa": "Công Nghệ Thông Tin",
+      "GiaoVien": "Phan Thị Hường",
+      "NamHoc": "2020"
     }
   }
 

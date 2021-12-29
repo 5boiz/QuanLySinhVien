@@ -69,8 +69,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AddClass.cs" />
     <Compile Include="Controller\GetAllClass.cs" />
+    <Compile Include="Controller\GetClassByID.cs" />
+    <Compile Include="Controller\GetLastClassID.cs" />
+    <Compile Include="Controller\GetUserByName.cs" />
     <Compile Include="Controller\GetUserByID.cs" />
+    <Compile Include="Controller\IsClassNameExists.cs" />
+    <Compile Include="Controller\UpdateClass.cs" />
     <Compile Include="Controller\UpdateUser.cs" />
     <Compile Include="Controller\IsUserNameExists.cs" />
     <Compile Include="Controller\AddUser.cs" />
@@ -81,6 +87,12 @@
     <Compile Include="Controller\Logout.cs" />
     <Compile Include="Controller\Login.cs" />
     <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Forms\EditClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditClassForm.designer.cs">
+      <DependentUpon>EditClassForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CreateClassForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +160,9 @@
     <Compile Include="UC_control\CloseButton.Designer.cs">
       <DependentUpon>CloseButton.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\EditClassForm.resx">
+      <DependentUpon>EditClassForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateClassForm.resx">
       <DependentUpon>CreateClassForm.cs</DependentUpon>
     </EmbeddedResource>

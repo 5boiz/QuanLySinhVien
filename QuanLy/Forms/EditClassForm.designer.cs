@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLy.UC_control
 {
-    partial class CreateClassForm
+    partial class EditClassForm
     {
         /// <summary>
         /// Required designer variable.
@@ -93,7 +93,7 @@ namespace QuanLy.UC_control
             this.lblLop.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLop.Location = new System.Drawing.Point(0, 0);
             this.lblLop.Name = "lblLop";
-            this.lblLop.Size = new System.Drawing.Size(529, 55);
+            this.lblLop.Size = new System.Drawing.Size(530, 55);
             this.lblLop.TabIndex = 71;
             this.lblLop.Text = "Lớp";
             this.lblLop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -165,17 +165,17 @@ namespace QuanLy.UC_control
             // 
             // txtFaculty
             // 
-            this.txtFaculty.Location = new System.Drawing.Point(171, 234);
+            this.txtFaculty.Location = new System.Drawing.Point(171, 235);
             this.txtFaculty.Name = "txtFaculty";
             this.txtFaculty.Size = new System.Drawing.Size(278, 22);
             this.txtFaculty.TabIndex = 78;
             // 
-            // CreateClassForm
+            // EditClassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(529, 517);
+            this.ClientSize = new System.Drawing.Size(530, 541);
             this.Controls.Add(this.txtFaculty);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbTeacher);
@@ -190,7 +190,7 @@ namespace QuanLy.UC_control
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CreateClassForm";
+            this.Name = "EditClassForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDKLop";
             this.ResumeLayout(false);
