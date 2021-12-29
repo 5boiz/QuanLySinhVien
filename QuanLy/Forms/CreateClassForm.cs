@@ -31,7 +31,7 @@ namespace QuanLy.UC_control
             classs.ID = txtID.Text;
             classs.TenLop = txtClassName.Text;
             classs.Khoa = txtFaculty.Text;
-            classs.GiaoVien = ((User)cbTeacher.SelectedItem).HoTen;
+            classs.GiaoVien = ((User)cbTeacher.SelectedItem).ID;
             classs.NamHoc = txtYear.Text;
 
 

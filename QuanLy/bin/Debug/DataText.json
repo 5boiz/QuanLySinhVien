@@ -22,8 +22,8 @@
     },
     "3": {
       "ID": "3",
-      "HoTen": "Nguyễn Hoài A",
-      "GioiTinh": "Nam",
+      "HoTen": "Phan Thị Hường",
+      "GioiTinh": "Nữ",
       "TenTaiKhoan": "admin",
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
@@ -36,17 +36,24 @@
       "ID": "1",
       "TenLop": "19ct113",
       "Khoa": "Công Nghệ Thông Tin",
-      "GiaoVien": "Phan Thị Hường",
+      "GiaoVien": "3",
       "NamHoc": "2020"
     },
     "2": {
       "ID": "2",
+      "TenLop": "19ct114",
+      "Khoa": "Công Nghệ Thông Tin",
+      "GiaoVien": "3",
+      "NamHoc": "2020"
+    },
+    "3": {
+      "ID": "3",
       "TenLop": "19ct113",
-      "Khoa": "qưeqwe",
-      "GiaoVien": "Nguyễn Hoài A",
-      "NamHoc": "12312"
+      "Khoa": "CNTT",
+      "GiaoVien": "3",
+      "NamHoc": "1234"
     }
   },
   "LID": 3,
-  "LCID": 2
+  "LCID": 3
 }

@@ -25,7 +25,7 @@ namespace QuanLy.UC_control
             txtFaculty.Text = classs.Khoa;
             cbTeacher.DataSource = Static.controller.GetAllTeacher();
             cbTeacher.DisplayMember = "HoTen";
-            cbTeacher.SelectedItem = Static.controller.GetUserByName(value.GiaoVien);
+
             txtYear.Text = classs.NamHoc;
         }
 
@@ -35,7 +35,7 @@ namespace QuanLy.UC_control
             classs.ID = txtID.Text;
             classs.TenLop = txtClassName.Text;
             classs.Khoa = txtFaculty.Text;
-            classs.GiaoVien = ((User)cbTeacher.SelectedItem).HoTen;
+            classs.GiaoVien = ((User)cbTeacher.SelectedItem).ID;
             classs.NamHoc = txtYear.Text;
 
 
