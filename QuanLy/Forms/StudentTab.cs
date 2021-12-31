@@ -75,5 +75,10 @@ namespace QuanLy
         {
             Static.controller.LoadDataToDataGridView(dgvStudent, Static.controller.SearchUser(LoaiNguoiDung.SinhVien, txtSearchStudent.Text));
         }
+
+        private void btnExportStudent_Click(object sender, EventArgs e)
+        {
+            Static.controller.ExportUserToExcel(dgvStudent);
+        }
     }
 }

@@ -35,9 +35,18 @@ namespace QuanLy
                 }
             });
 
-            bindingSourceStudent.DataSource = users;
+            if (loaiNguoiDung == LoaiNguoiDung.SinhVien)
+            {
+                bindingSourceStudent.DataSource = users;
+                return bindingSourceStudent;
+            }
+            else
+            {
+                bindingSourceTeacher.DataSource = users;
+                return bindingSourceTeacher;
+            }
 
-            return bindingSourceStudent;
+            
         }
     }
 }

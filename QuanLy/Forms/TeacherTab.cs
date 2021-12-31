@@ -80,5 +80,15 @@ namespace QuanLy
                 MessageBox.Show("Xóa tài khoản thành công.");
             }
         }
+
+        private void txtSearchTeacher_TextChanged(object sender, EventArgs e)
+        {
+            Static.controller.LoadDataToDataGridView(dgvTeacher, Static.controller.SearchUser(LoaiNguoiDung.GiaoVien, txtSearchTeacher.Text));
+        }
+
+        private void btnExportTeacher_Click(object sender, EventArgs e)
+        {
+            Static.controller.ExportUserToExcel(dgvTeacher);
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace QuanLy
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnNguoiDung = new System.Windows.Forms.Panel();
             this.txtSearchStudent = new Guna.UI.WinForms.GunaTextBox();
-            this.btnInStudent = new System.Windows.Forms.Button();
+            this.btnExportStudent = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -76,7 +76,7 @@ namespace QuanLy
             // pnbtnNguoiDung
             // 
             this.pnbtnNguoiDung.Controls.Add(this.txtSearchStudent);
-            this.pnbtnNguoiDung.Controls.Add(this.btnInStudent);
+            this.pnbtnNguoiDung.Controls.Add(this.btnExportStudent);
             this.pnbtnNguoiDung.Controls.Add(this.btnAdd);
             this.pnbtnNguoiDung.Controls.Add(this.btnUpdate);
             this.pnbtnNguoiDung.Controls.Add(this.btnDelete);
@@ -104,15 +104,16 @@ namespace QuanLy
             this.txtSearchStudent.Tag = "";
             this.txtSearchStudent.TextChanged += new System.EventHandler(this.txtSearchStudent_TextChanged);
             // 
-            // btnInStudent
+            // btnExportStudent
             // 
-            this.btnInStudent.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnInStudent.Location = new System.Drawing.Point(637, 16);
-            this.btnInStudent.Name = "btnInStudent";
-            this.btnInStudent.Size = new System.Drawing.Size(81, 40);
-            this.btnInStudent.TabIndex = 13;
-            this.btnInStudent.Text = "In DSSV";
-            this.btnInStudent.UseVisualStyleBackColor = true;
+            this.btnExportStudent.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnExportStudent.Location = new System.Drawing.Point(637, 16);
+            this.btnExportStudent.Name = "btnExportStudent";
+            this.btnExportStudent.Size = new System.Drawing.Size(81, 40);
+            this.btnExportStudent.TabIndex = 13;
+            this.btnExportStudent.Text = "In DSSV";
+            this.btnExportStudent.UseVisualStyleBackColor = true;
+            this.btnExportStudent.Click += new System.EventHandler(this.btnExportStudent_Click);
             // 
             // btnAdd
             // 
@@ -289,7 +290,7 @@ namespace QuanLy
         private UC_control.CloseButton closeButton1;
         private System.Windows.Forms.Panel pnbtnNguoiDung;
         private Guna.UI.WinForms.GunaTextBox txtSearchStudent;
-        private System.Windows.Forms.Button btnInStudent;
+        private System.Windows.Forms.Button btnExportStudent;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;

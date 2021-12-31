@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AddClass.cs" />
+    <Compile Include="Controller\ExportUserToExcel.cs" />
     <Compile Include="Controller\SearchUser.cs" />
     <Compile Include="Controller\DeleteClass.cs" />
     <Compile Include="Controller\IsClassEmpty.cs" />

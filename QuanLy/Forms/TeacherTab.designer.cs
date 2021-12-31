@@ -29,12 +29,12 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnNguoiDung = new System.Windows.Forms.Panel();
-            this.txtTimKiemNguoiDung = new Guna.UI.WinForms.GunaTextBox();
-            this.btnIn = new System.Windows.Forms.Button();
+            this.txtSearchTeacher = new Guna.UI.WinForms.GunaTextBox();
+            this.btnExportTeacher = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -75,8 +75,8 @@ namespace QuanLy
             // 
             // pnbtnNguoiDung
             // 
-            this.pnbtnNguoiDung.Controls.Add(this.txtTimKiemNguoiDung);
-            this.pnbtnNguoiDung.Controls.Add(this.btnIn);
+            this.pnbtnNguoiDung.Controls.Add(this.txtSearchTeacher);
+            this.pnbtnNguoiDung.Controls.Add(this.btnExportTeacher);
             this.pnbtnNguoiDung.Controls.Add(this.btnAdd);
             this.pnbtnNguoiDung.Controls.Add(this.btnUpdate);
             this.pnbtnNguoiDung.Controls.Add(this.btnDelete);
@@ -86,32 +86,34 @@ namespace QuanLy
             this.pnbtnNguoiDung.Size = new System.Drawing.Size(744, 70);
             this.pnbtnNguoiDung.TabIndex = 10;
             // 
-            // txtTimKiemNguoiDung
+            // txtSearchTeacher
             // 
-            this.txtTimKiemNguoiDung.BaseColor = System.Drawing.Color.White;
-            this.txtTimKiemNguoiDung.BorderColor = System.Drawing.Color.Silver;
-            this.txtTimKiemNguoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimKiemNguoiDung.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtTimKiemNguoiDung.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
-            this.txtTimKiemNguoiDung.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTimKiemNguoiDung.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiemNguoiDung.Location = new System.Drawing.Point(380, 22);
-            this.txtTimKiemNguoiDung.Name = "txtTimKiemNguoiDung";
-            this.txtTimKiemNguoiDung.PasswordChar = '\0';
-            this.txtTimKiemNguoiDung.SelectedText = "";
-            this.txtTimKiemNguoiDung.Size = new System.Drawing.Size(234, 31);
-            this.txtTimKiemNguoiDung.TabIndex = 14;
-            this.txtTimKiemNguoiDung.Tag = "";
+            this.txtSearchTeacher.BaseColor = System.Drawing.Color.White;
+            this.txtSearchTeacher.BorderColor = System.Drawing.Color.Silver;
+            this.txtSearchTeacher.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchTeacher.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSearchTeacher.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
+            this.txtSearchTeacher.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearchTeacher.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchTeacher.Location = new System.Drawing.Point(380, 22);
+            this.txtSearchTeacher.Name = "txtSearchTeacher";
+            this.txtSearchTeacher.PasswordChar = '\0';
+            this.txtSearchTeacher.SelectedText = "";
+            this.txtSearchTeacher.Size = new System.Drawing.Size(234, 31);
+            this.txtSearchTeacher.TabIndex = 14;
+            this.txtSearchTeacher.Tag = "";
+            this.txtSearchTeacher.TextChanged += new System.EventHandler(this.txtSearchTeacher_TextChanged);
             // 
-            // btnIn
+            // btnExportTeacher
             // 
-            this.btnIn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnIn.Location = new System.Drawing.Point(638, 16);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(81, 40);
-            this.btnIn.TabIndex = 13;
-            this.btnIn.Text = "In DSSV";
-            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnExportTeacher.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnExportTeacher.Location = new System.Drawing.Point(638, 16);
+            this.btnExportTeacher.Name = "btnExportTeacher";
+            this.btnExportTeacher.Size = new System.Drawing.Size(81, 40);
+            this.btnExportTeacher.TabIndex = 13;
+            this.btnExportTeacher.Text = "In DSSV";
+            this.btnExportTeacher.UseVisualStyleBackColor = true;
+            this.btnExportTeacher.Click += new System.EventHandler(this.btnExportTeacher_Click);
             // 
             // btnAdd
             // 
@@ -171,14 +173,14 @@ namespace QuanLy
             this.TenTaiKhoan,
             this.MatKhau,
             this.LoaiTaiKhoan});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTeacher.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTeacher.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTeacher.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTeacher.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvTeacher.Location = new System.Drawing.Point(0, 70);
@@ -288,8 +290,8 @@ namespace QuanLy
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvTeacher;
         private UC_control.CloseButton closeButton1;
         private System.Windows.Forms.Panel pnbtnNguoiDung;
-        private Guna.UI.WinForms.GunaTextBox txtTimKiemNguoiDung;
-        private System.Windows.Forms.Button btnIn;
+        private Guna.UI.WinForms.GunaTextBox txtSearchTeacher;
+        private System.Windows.Forms.Button btnExportTeacher;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
