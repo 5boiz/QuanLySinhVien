@@ -36,13 +36,13 @@ namespace QuanLy
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnCloseTab = new QuanLy.UC_control.CloseButton();
             this.dgvClass = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaoVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.closeButton1 = new QuanLy.UC_control.CloseButton();
             this.panel2.SuspendLayout();
             this.pnbtnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
@@ -61,7 +61,7 @@ namespace QuanLy
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
             this.panel2.Controls.Add(this.pnbtnMenu);
-            this.panel2.Controls.Add(this.closeButton1);
+            this.panel2.Controls.Add(this.btnCloseTab);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -111,6 +111,16 @@ namespace QuanLy
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnCloseTab
+            // 
+            this.btnCloseTab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseTab.Location = new System.Drawing.Point(890, 15);
+            this.btnCloseTab.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCloseTab.Name = "btnCloseTab";
+            this.btnCloseTab.Size = new System.Drawing.Size(40, 40);
+            this.btnCloseTab.TabIndex = 6;
+            this.btnCloseTab.Load += new System.EventHandler(this.btnCloseTab_Load);
             // 
             // dgvClass
             // 
@@ -189,15 +199,6 @@ namespace QuanLy
             this.NamHoc.ReadOnly = true;
             this.NamHoc.Width = 125;
             // 
-            // closeButton1
-            // 
-            this.closeButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton1.Location = new System.Drawing.Point(890, 15);
-            this.closeButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.closeButton1.Name = "closeButton1";
-            this.closeButton1.Size = new System.Drawing.Size(40, 40);
-            this.closeButton1.TabIndex = 6;
-            // 
             // ClassTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -220,7 +221,7 @@ namespace QuanLy
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvClass;
-        private UC_control.CloseButton closeButton1;
+        private UC_control.CloseButton btnCloseTab;
         private System.Windows.Forms.Panel pnbtnMenu;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;

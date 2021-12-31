@@ -466,7 +466,7 @@ namespace QuanLy
             // btnStudent
             // 
             this.btnStudent.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnStudent.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnStudent.Image = global::QuanLy.Properties.Resources.student_male_50px;
             this.btnStudent.ImageFixedSize = new System.Drawing.Size(40, 40);
             this.btnStudent.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnStudent.Name = "btnStudent";
@@ -477,7 +477,7 @@ namespace QuanLy
             // btnTeacher
             // 
             this.btnTeacher.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnTeacher.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnTeacher.Image = global::QuanLy.Properties.Resources.teacher_50px;
             this.btnTeacher.ImageFixedSize = new System.Drawing.Size(40, 40);
             this.btnTeacher.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnTeacher.Name = "btnTeacher";
@@ -499,7 +499,7 @@ namespace QuanLy
             // btnLogout
             // 
             this.btnLogout.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnLogout.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnLogout.Image = global::QuanLy.Properties.Resources.sign_out_40px;
             this.btnLogout.ImageFixedSize = new System.Drawing.Size(40, 40);
             this.btnLogout.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnLogout.Name = "btnLogout";
