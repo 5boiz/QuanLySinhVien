@@ -20,8 +20,7 @@ namespace QuanLy
         public void XuatData()
         {
             string data = JsonConvert.SerializeObject(Data, Formatting.Indented);
-            File.WriteAllText("DataText.json", data);
-
+            File.WriteAllText("Data.json", data);
         }
 
     }
