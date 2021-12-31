@@ -29,20 +29,20 @@ namespace QuanLy
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnbtnMenu = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnCloseTab = new QuanLy.UC_control.CloseButton();
             this.dgvClass = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaoVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCloseTab = new QuanLy.UC_control.CloseButton();
             this.panel2.SuspendLayout();
             this.pnbtnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
@@ -76,13 +76,13 @@ namespace QuanLy
             this.pnbtnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnbtnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnbtnMenu.Name = "pnbtnMenu";
-            this.pnbtnMenu.Size = new System.Drawing.Size(483, 70);
+            this.pnbtnMenu.Size = new System.Drawing.Size(364, 70);
             this.pnbtnMenu.TabIndex = 7;
             // 
             // btnAdd
             // 
             this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnAdd.Location = new System.Drawing.Point(20, 15);
+            this.btnAdd.Location = new System.Drawing.Point(40, 15);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 40);
             this.btnAdd.TabIndex = 9;
@@ -93,7 +93,7 @@ namespace QuanLy
             // btnUpdate
             // 
             this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(101, 15);
+            this.btnUpdate.Location = new System.Drawing.Point(130, 15);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 40);
             this.btnUpdate.TabIndex = 8;
@@ -104,23 +104,13 @@ namespace QuanLy
             // btnDelete
             // 
             this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(182, 15);
+            this.btnDelete.Location = new System.Drawing.Point(220, 15);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 40);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnCloseTab
-            // 
-            this.btnCloseTab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseTab.Location = new System.Drawing.Point(890, 15);
-            this.btnCloseTab.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCloseTab.Name = "btnCloseTab";
-            this.btnCloseTab.Size = new System.Drawing.Size(40, 40);
-            this.btnCloseTab.TabIndex = 6;
-            this.btnCloseTab.Load += new System.EventHandler(this.btnCloseTab_Load);
             // 
             // dgvClass
             // 
@@ -134,14 +124,14 @@ namespace QuanLy
             this.Khoa,
             this.GiaoVien,
             this.NamHoc});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClass.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClass.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvClass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvClass.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvClass.Location = new System.Drawing.Point(0, 70);
@@ -199,6 +189,16 @@ namespace QuanLy
             this.NamHoc.ReadOnly = true;
             this.NamHoc.Width = 125;
             // 
+            // btnCloseTab
+            // 
+            this.btnCloseTab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseTab.Location = new System.Drawing.Point(890, 15);
+            this.btnCloseTab.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCloseTab.Name = "btnCloseTab";
+            this.btnCloseTab.Size = new System.Drawing.Size(40, 40);
+            this.btnCloseTab.TabIndex = 6;
+            this.btnCloseTab.Click += new System.EventHandler(this.btnCloseTab_Click);
+            // 
             // ClassTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,6 +210,7 @@ namespace QuanLy
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClassTab";
             this.Text = "fQuanLyLop";
+            this.Load += new System.EventHandler(this.ClassTab_Load);
             this.panel2.ResumeLayout(false);
             this.pnbtnMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).EndInit();

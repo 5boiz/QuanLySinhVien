@@ -15,27 +15,20 @@ namespace QuanLy
 {
     public partial class TeacherTab : Form
     {
-        public TeacherTab()
+        MainForm main;
+        public TeacherTab(MainForm value)
         {
             InitializeComponent();
             this.TopLevel = false;
             this.Dock = DockStyle.Fill;
             this.Visible = true;
 
+            main = value;
+
             Static.controller.LoadDataToDataGridView(dgvTeacher, Static.controller.bindingSourceTeacher);
         }
 
 
-        private void fQuanLySinhVien_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-
-        private void closeButton1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -89,6 +82,19 @@ namespace QuanLy
         private void btnExportTeacher_Click(object sender, EventArgs e)
         {
             Static.controller.ExportUserToExcel(dgvTeacher);
+        }
+
+        private void btnCloseTabControl_Click(object sender, EventArgs e)
+        {
+            main.tab.SelectedIndex = 2;
+        }
+
+        private void TeacherTab_Load(object sender, EventArgs e)
+        {
+            if (Static.controller.user.LoaiNguoiDung == LoaiNguoiDung.SinhVien)
+            {
+                pnbtnMenu.Visible = false;
+            }
         }
     }
 }

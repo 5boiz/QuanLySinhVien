@@ -15,21 +15,19 @@ namespace QuanLy
 {
     public partial class StudentTab : Form
     {
-        public StudentTab()
+        MainForm main;
+        public StudentTab(MainForm value)
         {
             InitializeComponent();
             this.TopLevel = false;
             this.Dock = DockStyle.Fill;
             this.Visible = true;
 
+            main = value;
+
             Static.controller.LoadDataToDataGridView(dgvStudent, Static.controller.bindingSourceStudent);
         }
 
-
-        private void closeButton1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -79,6 +77,19 @@ namespace QuanLy
         private void btnExportStudent_Click(object sender, EventArgs e)
         {
             Static.controller.ExportUserToExcel(dgvStudent);
+        }
+
+        private void btnCloseTabControl_Click(object sender, EventArgs e)
+        {
+            main.tab.SelectedIndex = 2;
+        }
+
+        private void StudentTab_Load(object sender, EventArgs e)
+        {
+            if (Static.controller.user.LoaiNguoiDung == LoaiNguoiDung.SinhVien)
+            {
+                pnbtnMenu.Visible = false;
+            }
         }
     }
 }

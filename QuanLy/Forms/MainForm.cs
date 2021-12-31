@@ -13,6 +13,7 @@ namespace QuanLy
 {
     public partial class MainForm : DevComponents.DotNetBar.Office2007RibbonForm
     {
+        public System.Windows.Forms.TabControl tab;
         public MainForm()
         {
             InitializeComponent();
@@ -27,14 +28,16 @@ namespace QuanLy
             tabControl.ItemSize = new Size(0,1);
             tabControl.SizeMode = TabSizeMode.Fixed;
 
-            ClassTab classTab = new ClassTab();
+            tab = tabControl;
+
+            ClassTab classTab = new ClassTab(this);
             tabPageClass.Controls.Add(classTab);
 
 
-            StudentTab studentTab = new StudentTab();
+            StudentTab studentTab = new StudentTab(this);
             tabPageStudent.Controls.Add(studentTab);
 
-            TeacherTab teacherTab = new TeacherTab();
+            TeacherTab teacherTab = new TeacherTab(this);
             tabPageTeacher.Controls.Add(teacherTab);
 
 

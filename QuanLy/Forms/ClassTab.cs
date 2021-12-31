@@ -15,13 +15,15 @@ namespace QuanLy
 {
     public partial class ClassTab : Form
     {
-        public ClassTab()
+        MainForm main;
+        public ClassTab(MainForm value)
         {
             InitializeComponent();
             this.TopLevel = false;
             this.Dock = DockStyle.Fill;
             this.Visible = true;
 
+            main = value;
 
             Static.controller.LoadDataToDataGridView(dgvClass, Static.controller.bindingSourceClass);
 
@@ -71,9 +73,17 @@ namespace QuanLy
             }
         }
 
-        private void btnCloseTab_Load(object sender, EventArgs e)
+        private void btnCloseTab_Click(object sender, EventArgs e)
         {
-            
+            main.tab.SelectedIndex = 2;
+        }
+
+        private void ClassTab_Load(object sender, EventArgs e)
+        {
+            if (Static.controller.user.LoaiNguoiDung == LoaiNguoiDung.SinhVien)
+            {
+                pnbtnMenu.Visible = false;
+            }
         }
     }
 }
