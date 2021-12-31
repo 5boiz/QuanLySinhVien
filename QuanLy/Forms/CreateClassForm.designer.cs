@@ -120,7 +120,7 @@ namespace QuanLy.UC_control
             // 
             // txtClassName
             // 
-            this.txtClassName.Location = new System.Drawing.Point(171, 173);
+            this.txtClassName.Location = new System.Drawing.Point(171, 175);
             this.txtClassName.Name = "txtClassName";
             this.txtClassName.Size = new System.Drawing.Size(278, 22);
             this.txtClassName.TabIndex = 2;
