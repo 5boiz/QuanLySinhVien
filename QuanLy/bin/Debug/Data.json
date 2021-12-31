@@ -4,7 +4,7 @@
   "users": {
     "1": {
       "ID": "1",
-      "HoTen": "Nguyễn Hoài N",
+      "HoTen": "Nguyễn Hoài Nam",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "nam",
       "MatKhau": "123",
@@ -14,7 +14,7 @@
     },
     "2": {
       "ID": "2",
-      "HoTen": "Nguyễn Hoài M",
+      "HoTen": "Lê Thanh Nam",
       "GioiTinh": "Nam",
       "TenTaiKhoan": "mam",
       "MatKhau": "123",

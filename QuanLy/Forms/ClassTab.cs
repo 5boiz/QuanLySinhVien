@@ -70,5 +70,10 @@ namespace QuanLy
                 MessageBox.Show("Xóa lớp thành công.");
             }
         }
+
+        private void btnCloseTab_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
