@@ -102,6 +102,7 @@ namespace QuanLy
             this.txtSearchStudent.Size = new System.Drawing.Size(234, 31);
             this.txtSearchStudent.TabIndex = 14;
             this.txtSearchStudent.Tag = "";
+            this.txtSearchStudent.TextChanged += new System.EventHandler(this.txtSearchStudent_TextChanged);
             // 
             // btnInStudent
             // 
@@ -274,7 +275,6 @@ namespace QuanLy
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentTab";
             this.Text = "QuanLySinhVien";
-            this.Load += new System.EventHandler(this.fQuanLySinhVien_Load);
             this.panel2.ResumeLayout(false);
             this.pnbtnNguoiDung.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).EndInit();

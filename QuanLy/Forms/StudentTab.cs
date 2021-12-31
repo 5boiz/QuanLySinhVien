@@ -26,13 +26,6 @@ namespace QuanLy
         }
 
 
-
-        private void fQuanLySinhVien_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-
         private void closeButton1_Click_1(object sender, EventArgs e)
         {
             
@@ -76,6 +69,11 @@ namespace QuanLy
                 MessageBox.Show("Xóa tài khoản thành công.");
             }
             
+        }
+
+        private void txtSearchStudent_TextChanged(object sender, EventArgs e)
+        {
+            Static.controller.LoadDataToDataGridView(dgvStudent, Static.controller.SearchUser(LoaiNguoiDung.SinhVien, txtSearchStudent.Text));
         }
     }
 }

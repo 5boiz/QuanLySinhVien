@@ -53,8 +53,13 @@ namespace QuanLy
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnClass = new DevComponents.DotNetBar.ButtonItem();
+            this.btnStudent = new DevComponents.DotNetBar.ButtonItem();
+            this.btnTeacher = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnUserInfo = new DevComponents.DotNetBar.ButtonItem();
+            this.btnLogout = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
@@ -67,11 +72,6 @@ namespace QuanLy
             this.tabPageStudent = new System.Windows.Forms.TabPage();
             this.tabPageHome = new System.Windows.Forms.TabPage();
             this.tabPageTeacher = new System.Windows.Forms.TabPage();
-            this.btnClass = new DevComponents.DotNetBar.ButtonItem();
-            this.btnStudent = new DevComponents.DotNetBar.ButtonItem();
-            this.btnTeacher = new DevComponents.DotNetBar.ButtonItem();
-            this.btnUserInfo = new DevComponents.DotNetBar.ButtonItem();
-            this.btnLogout = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem20 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
@@ -321,6 +321,39 @@ namespace QuanLy
             this.ribbonBar2.TabIndex = 1;
             this.ribbonBar2.Text = "Quản lý";
             // 
+            // btnClass
+            // 
+            this.btnClass.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnClass.Image = global::QuanLy.Properties.Resources.class_40px;
+            this.btnClass.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnClass.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnClass.Name = "btnClass";
+            this.btnClass.SubItemsExpandWidth = 14;
+            this.btnClass.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>lớp học</div>";
+            this.btnClass.Click += new System.EventHandler(this.btnClass_Click);
+            // 
+            // btnStudent
+            // 
+            this.btnStudent.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnStudent.Image = global::QuanLy.Properties.Resources.student_male_50px;
+            this.btnStudent.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnStudent.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.SubItemsExpandWidth = 14;
+            this.btnStudent.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>học sinh</div>";
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            // 
+            // btnTeacher
+            // 
+            this.btnTeacher.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnTeacher.Image = global::QuanLy.Properties.Resources.teacher_50px;
+            this.btnTeacher.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnTeacher.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnTeacher.Name = "btnTeacher";
+            this.btnTeacher.SubItemsExpandWidth = 14;
+            this.btnTeacher.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>giáo viên</div>";
+            this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
+            // 
             // ribbonPanel1
             // 
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
@@ -347,6 +380,28 @@ namespace QuanLy
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TabIndex = 0;
             this.ribbonBar1.Text = "Hệ thống";
+            // 
+            // btnUserInfo
+            // 
+            this.btnUserInfo.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnUserInfo.Image = global::QuanLy.Properties.Resources.test_account_40px;
+            this.btnUserInfo.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnUserInfo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnUserInfo.Name = "btnUserInfo";
+            this.btnUserInfo.SubItemsExpandWidth = 14;
+            this.btnUserInfo.Text = "<div width=\"70\" align=\"center\">Thông tin<br/> cá nhân</div>";
+            this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
+            this.btnLogout.Image = global::QuanLy.Properties.Resources.sign_out_40px;
+            this.btnLogout.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.btnLogout.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.SubItemsExpandWidth = 14;
+            this.btnLogout.Text = "<div width=\"70\" align=\"center\">Đăng xuất</div>";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // ribbonTabItem2
             // 
@@ -451,61 +506,6 @@ namespace QuanLy
             this.tabPageTeacher.TabIndex = 3;
             this.tabPageTeacher.Text = "TeacherTab";
             this.tabPageTeacher.UseVisualStyleBackColor = true;
-            // 
-            // btnClass
-            // 
-            this.btnClass.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnClass.Image = global::QuanLy.Properties.Resources.class_40px;
-            this.btnClass.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnClass.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnClass.Name = "btnClass";
-            this.btnClass.SubItemsExpandWidth = 14;
-            this.btnClass.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>lớp học</div>";
-            this.btnClass.Click += new System.EventHandler(this.btnClass_Click);
-            // 
-            // btnStudent
-            // 
-            this.btnStudent.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnStudent.Image = global::QuanLy.Properties.Resources.student_male_50px;
-            this.btnStudent.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnStudent.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnStudent.Name = "btnStudent";
-            this.btnStudent.SubItemsExpandWidth = 14;
-            this.btnStudent.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>học sinh</div>";
-            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
-            // 
-            // btnTeacher
-            // 
-            this.btnTeacher.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnTeacher.Image = global::QuanLy.Properties.Resources.teacher_50px;
-            this.btnTeacher.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnTeacher.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnTeacher.Name = "btnTeacher";
-            this.btnTeacher.SubItemsExpandWidth = 14;
-            this.btnTeacher.Text = "<div width=\"70\" align=\"center\">Quản lý<br/>giáo viên</div>";
-            this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
-            // 
-            // btnUserInfo
-            // 
-            this.btnUserInfo.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnUserInfo.Image = global::QuanLy.Properties.Resources.test_account_40px;
-            this.btnUserInfo.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnUserInfo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnUserInfo.Name = "btnUserInfo";
-            this.btnUserInfo.SubItemsExpandWidth = 14;
-            this.btnUserInfo.Text = "<div width=\"70\" align=\"center\">Thông tin<br/> cá nhân</div>";
-            this.btnUserInfo.Click += new System.EventHandler(this.btnUserInfo_Click);
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.HoverImage = global::QuanLy.Properties.Resources.checked_checkbox_40px;
-            this.btnLogout.Image = global::QuanLy.Properties.Resources.sign_out_40px;
-            this.btnLogout.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.SubItemsExpandWidth = 14;
-            this.btnLogout.Text = "<div width=\"70\" align=\"center\">Đăng xuất</div>";
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // buttonItem17
             // 
