@@ -31,21 +31,20 @@ namespace QuanLy
         {
             this.lblThongTinCaNhan = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cbClass = new System.Windows.Forms.ComboBox();
+            this.txtPassWord = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbGiaoVien = new System.Windows.Forms.ComboBox();
+            this.cbType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCapNhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbKhoa = new System.Windows.Forms.ComboBox();
+            this.cbGender = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTenLop = new System.Windows.Forms.TextBox();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -72,20 +71,22 @@ namespace QuanLy
             this.label8.TabIndex = 115;
             this.label8.Text = "Lớp";
             // 
-            // comboBox1
+            // cbClass
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(175, 256);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(277, 24);
-            this.comboBox1.TabIndex = 4;
+            this.cbClass.Enabled = false;
+            this.cbClass.FormattingEnabled = true;
+            this.cbClass.Location = new System.Drawing.Point(175, 256);
+            this.cbClass.Name = "cbClass";
+            this.cbClass.Size = new System.Drawing.Size(277, 24);
+            this.cbClass.TabIndex = 4;
             // 
-            // textBox3
+            // txtPassWord
             // 
-            this.textBox3.Location = new System.Drawing.Point(175, 406);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 22);
-            this.textBox3.TabIndex = 7;
+            this.txtPassWord.Enabled = false;
+            this.txtPassWord.Location = new System.Drawing.Point(175, 406);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.Size = new System.Drawing.Size(277, 22);
+            this.txtPassWord.TabIndex = 7;
             // 
             // label7
             // 
@@ -97,12 +98,13 @@ namespace QuanLy
             this.label7.TabIndex = 112;
             this.label7.Text = "Mật khẩu";
             // 
-            // textBox2
+            // txtUserName
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 356);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 22);
-            this.textBox2.TabIndex = 6;
+            this.txtUserName.Enabled = false;
+            this.txtUserName.Location = new System.Drawing.Point(175, 356);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(277, 22);
+            this.txtUserName.TabIndex = 6;
             // 
             // label6
             // 
@@ -114,12 +116,13 @@ namespace QuanLy
             this.label6.TabIndex = 110;
             this.label6.Text = "Tài khoản";
             // 
-            // textBox1
+            // txtAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 306);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtAddress.Enabled = false;
+            this.txtAddress.Location = new System.Drawing.Point(175, 306);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(277, 22);
+            this.txtAddress.TabIndex = 5;
             // 
             // label5
             // 
@@ -131,13 +134,14 @@ namespace QuanLy
             this.label5.TabIndex = 108;
             this.label5.Text = "Địa chỉ";
             // 
-            // cbGiaoVien
+            // cbType
             // 
-            this.cbGiaoVien.FormattingEnabled = true;
-            this.cbGiaoVien.Location = new System.Drawing.Point(175, 456);
-            this.cbGiaoVien.Name = "cbGiaoVien";
-            this.cbGiaoVien.Size = new System.Drawing.Size(277, 24);
-            this.cbGiaoVien.TabIndex = 7;
+            this.cbType.Enabled = false;
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Location = new System.Drawing.Point(175, 456);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(277, 24);
+            this.cbType.TabIndex = 7;
             // 
             // label4
             // 
@@ -149,28 +153,18 @@ namespace QuanLy
             this.label4.TabIndex = 106;
             this.label4.Text = "Loại TK";
             // 
-            // btnCapNhap
-            // 
-            this.btnCapNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnCapNhap.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapNhap.Location = new System.Drawing.Point(175, 506);
-            this.btnCapNhap.Name = "btnCapNhap";
-            this.btnCapNhap.Size = new System.Drawing.Size(105, 41);
-            this.btnCapNhap.TabIndex = 104;
-            this.btnCapNhap.Text = "Cập nhập";
-            this.btnCapNhap.UseVisualStyleBackColor = false;
-            // 
             // btnThoat
             // 
             this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.btnThoat.BackColor = System.Drawing.SystemColors.Control;
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoat.Location = new System.Drawing.Point(324, 506);
+            this.btnThoat.Location = new System.Drawing.Point(347, 506);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(105, 41);
             this.btnThoat.TabIndex = 105;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label3
             // 
@@ -182,13 +176,14 @@ namespace QuanLy
             this.label3.TabIndex = 103;
             this.label3.Text = "Giới tính";
             // 
-            // cbKhoa
+            // cbGender
             // 
-            this.cbKhoa.FormattingEnabled = true;
-            this.cbKhoa.Location = new System.Drawing.Point(175, 206);
-            this.cbKhoa.Name = "cbKhoa";
-            this.cbKhoa.Size = new System.Drawing.Size(277, 24);
-            this.cbKhoa.TabIndex = 3;
+            this.cbGender.Enabled = false;
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Location = new System.Drawing.Point(175, 206);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(277, 24);
+            this.cbGender.TabIndex = 3;
             // 
             // label2
             // 
@@ -200,12 +195,13 @@ namespace QuanLy
             this.label2.TabIndex = 101;
             this.label2.Text = "Họ tên";
             // 
-            // txtTenLop
+            // txtFullName
             // 
-            this.txtTenLop.Location = new System.Drawing.Point(175, 156);
-            this.txtTenLop.Name = "txtTenLop";
-            this.txtTenLop.Size = new System.Drawing.Size(277, 22);
-            this.txtTenLop.TabIndex = 2;
+            this.txtFullName.Enabled = false;
+            this.txtFullName.Location = new System.Drawing.Point(175, 156);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(277, 22);
+            this.txtFullName.TabIndex = 2;
             // 
             // txtID
             // 
@@ -232,21 +228,20 @@ namespace QuanLy
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(180)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(521, 598);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.cbClass);
+            this.Controls.Add(this.txtPassWord);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbGiaoVien);
+            this.Controls.Add(this.cbType);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnCapNhap);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbKhoa);
+            this.Controls.Add(this.cbGender);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtTenLop);
+            this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblThongTinCaNhan);
@@ -254,7 +249,7 @@ namespace QuanLy
             this.Name = "UserInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThongTinCaNhan";
-            this.Load += new System.EventHandler(this.fThongTinCaNhan_Load);
+            this.Load += new System.EventHandler(this.UserInfoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,21 +259,20 @@ namespace QuanLy
 
         private System.Windows.Forms.Label lblThongTinCaNhan;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox cbClass;
+        private System.Windows.Forms.TextBox txtPassWord;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbGiaoVien;
+        private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnCapNhap;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbKhoa;
+        private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTenLop;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label1;
     }

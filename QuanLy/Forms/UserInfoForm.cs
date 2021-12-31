@@ -1,4 +1,5 @@
 ﻿
+using QuanLy.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,15 +17,26 @@ namespace QuanLy
         public UserInfoForm()
         {
             InitializeComponent();
+
+
             
         }
-       
-        
-        private void fThongTinCaNhan_Load(object sender, EventArgs e)
+        private void UserInfoForm_Load(object sender, EventArgs e)
         {
+            User user = Static.controller.GetUserByID(Static.controller.user.ID);
+            txtID.Text = user.ID;
+            txtFullName.Text = user.HoTen;
+            txtAddress.Text = user.DiaChi;
+            cbClass.Text = Static.controller.GetClassByID(user.Lop).TenLop;
+            cbGender.Text = user.GioiTinh;
+            txtUserName.Text = user.TenTaiKhoan;
+            txtPassWord.Text = user.MatKhau;
+            cbType.Text = user.LoaiNguoiDung.ToString();
+        }
 
-           
-
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
