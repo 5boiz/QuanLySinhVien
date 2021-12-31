@@ -1,6 +1,4 @@
 {
-  "LID": 5,
-  "LCID": 2,
   "users": {
     "1": {
       "ID": "1",
@@ -10,17 +8,17 @@
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
-      "LoaiNguoiDung": "SinhVien"
+      "LoaiNguoiDung": 0
     },
     "2": {
       "ID": "2",
       "HoTen": "Lê Thanh Nam",
       "GioiTinh": "Nam",
-      "TenTaiKhoan": "mam",
+      "TenTaiKhoan": "nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
-      "LoaiNguoiDung": "SinhVien"
+      "LoaiNguoiDung": 0
     },
     "3": {
       "ID": "3",
@@ -30,7 +28,7 @@
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
-      "LoaiNguoiDung": "GiaoVien"
+      "LoaiNguoiDung": 1
     },
     "4": {
       "ID": "4",
@@ -40,7 +38,7 @@
       "MatKhau": "admin",
       "DiaChi": "Đồng Nai",
       "Lop": "2",
-      "LoaiNguoiDung": "GiaoVien"
+      "LoaiNguoiDung": 1
     },
     "5": {
       "ID": "5",
@@ -50,7 +48,87 @@
       "MatKhau": "admin",
       "DiaChi": "Hà Nội",
       "Lop": "3",
-      "LoaiNguoiDung": "GiaoVien"
+      "LoaiNguoiDung": 1
+    },
+    "6": {
+      "ID": "6",
+      "HoTen": "Lý Tấn Đat",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "dat",
+      "MatKhau": "123",
+      "DiaChi": "Đồng Nai",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
+    "7": {
+      "ID": "7",
+      "HoTen": "Vũ Ngọc Tuấn",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "tuan",
+      "MatKhau": "123",
+      "DiaChi": "Bình Dương",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
+    "8": {
+      "ID": "8",
+      "HoTen": "Ngô văn Đức",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "duc",
+      "MatKhau": "123",
+      "DiaChi": "Đồng Nai",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
+    "9": {
+      "ID": "9",
+      "HoTen": "Lê Xuân Vinh",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "vinh",
+      "MatKhau": "123",
+      "DiaChi": "Đồng Nai",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
+    "10": {
+      "ID": "10",
+      "HoTen": "Nguyễn Thanh Hoài",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "hoai",
+      "MatKhau": "123",
+      "DiaChi": "Đồng Nai",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
+    "11": {
+      "ID": "11",
+      "HoTen": "Nguyễn Thanh Thanh",
+      "GioiTinh": "Nữ",
+      "TenTaiKhoan": "thanh",
+      "MatKhau": "123",
+      "DiaChi": "Cần Thơ",
+      "Lop": "2",
+      "LoaiNguoiDung": 0
+    },
+    "12": {
+      "ID": "12",
+      "HoTen": "Lê Thị Linh",
+      "GioiTinh": "Nữ",
+      "TenTaiKhoan": "linh",
+      "MatKhau": "123",
+      "DiaChi": "Hà Nội",
+      "Lop": "3",
+      "LoaiNguoiDung": 0
+    },
+    "13": {
+      "ID": "13",
+      "HoTen": "Phạm Thi Linh Tú",
+      "GioiTinh": "Nữ",
+      "TenTaiKhoan": "tu",
+      "MatKhau": "123",
+      "DiaChi": "Huế",
+      "Lop": "3",
+      "LoaiNguoiDung": 0
     }
   },
   "classes": {
@@ -75,7 +153,7 @@
       "GiaoVien": "5",
       "NamHoc": "2020"
     }
-  }
-
-
+  },
+  "LID": 13,
+  "LCID": 2
 }

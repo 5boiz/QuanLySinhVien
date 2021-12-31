@@ -18,7 +18,7 @@ namespace QuanLy
             Static.mock.Data.users.Values.ToList().ForEach(u => {
                 if (u.LoaiNguoiDung == loaiNguoiDung)
                 {
-                    if (u.HoTen.Contains(query) || GetClassByID(u.Lop).TenLop.Contains(query) || u.DiaChi.Contains(query) || u.GioiTinh.Contains(query) )
+                    if (u.HoTen.ToLower().Contains(query.ToLower()) || GetClassByID(u.Lop).TenLop.ToLower().Contains(query.ToLower()) || u.DiaChi.ToLower().Contains(query.ToLower()) || u.GioiTinh.ToLower().Contains(query.ToLower()))
                     {
                         User user = new User();
                         user.ID = u.ID;
