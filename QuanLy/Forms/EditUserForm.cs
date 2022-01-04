@@ -34,6 +34,7 @@ namespace QuanLy.Forms
             cbType.SelectedItem = user.LoaiNguoiDung;
         }
 
+
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Close();
@@ -51,13 +52,18 @@ namespace QuanLy.Forms
             user.DiaChi = txtAddress.Text;
             user.LoaiNguoiDung = (LoaiNguoiDung)cbType.SelectedItem;
 
+            
 
             if (string.IsNullOrEmpty(user.HoTen) || string.IsNullOrEmpty(user.GioiTinh) || string.IsNullOrEmpty(user.Lop) || string.IsNullOrEmpty(user.DiaChi) || string.IsNullOrEmpty(user.TenTaiKhoan) || string.IsNullOrEmpty(user.MatKhau))
             {
                 MessageBox.Show("Thông tin không được để trống");
                 return;
             }
-            
+            //if (Static.controller.IsUserNameExists(user.TenTaiKhoan))
+            //{
+            //    MessageBox.Show("Tên tài khoản đã được sử dụng");
+            //    return;
+            //}
 
             Static.controller.UpdateUser(user);
             MessageBox.Show("Cập nhập thành công");

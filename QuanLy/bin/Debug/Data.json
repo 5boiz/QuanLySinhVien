@@ -4,7 +4,7 @@
       "ID": "1",
       "HoTen": "Nguyễn Hoài Nam",
       "GioiTinh": "Nam",
-      "TenTaiKhoan": "nam",
+      "TenTaiKhoan": "Nam",
       "MatKhau": "123",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
@@ -24,7 +24,7 @@
       "ID": "3",
       "HoTen": "Phan Thị Hường",
       "GioiTinh": "Nữ",
-      "TenTaiKhoan": "admin",
+      "TenTaiKhoan": "huong",
       "MatKhau": "admin",
       "DiaChi": "Thanh Hóa",
       "Lop": "1",
@@ -129,6 +129,36 @@
       "DiaChi": "Huế",
       "Lop": "3",
       "LoaiNguoiDung": 0
+    },
+    "14": {
+      "ID": "14",
+      "HoTen": "Lê Đình Chinh",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "chinh",
+      "MatKhau": "123",
+      "DiaChi": "Đồng Nai",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
+    },
+    "15": {
+      "ID": "15",
+      "HoTen": "ADMIN",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "admin",
+      "MatKhau": "admin",
+      "DiaChi": "Việt Nam",
+      "Lop": "5",
+      "LoaiNguoiDung": 1
+    },
+    "16": {
+      "ID": "16",
+      "HoTen": "Đoàn Nguyên Huy",
+      "GioiTinh": "Nam",
+      "TenTaiKhoan": "huy",
+      "MatKhau": "123",
+      "DiaChi": "Phú Yên",
+      "Lop": "1",
+      "LoaiNguoiDung": 0
     }
   },
   "classes": {
@@ -152,8 +182,22 @@
       "Khoa": "Công Nghệ Thông Tin",
       "GiaoVien": "5",
       "NamHoc": "2020"
+    },
+    "4": {
+      "ID": "4",
+      "TenLop": "19dd112",
+      "Khoa": "Đông Phương",
+      "GiaoVien": "5",
+      "NamHoc": "2020"
+    },
+    "5": {
+      "ID": "5",
+      "TenLop": "Chưa có lớp",
+      "Khoa": "Toàn trường",
+      "GiaoVien": "3",
+      "NamHoc": "2020"
     }
   },
-  "LID": 13,
-  "LCID": 2
+  "LID": 16,
+  "LCID": 5
 }

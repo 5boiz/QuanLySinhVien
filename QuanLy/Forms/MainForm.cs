@@ -41,6 +41,9 @@ namespace QuanLy
             tabPageTeacher.Controls.Add(teacherTab);
 
 
+
+            timer.Enabled = true;
+            lblTime.Text = string.Format("{0:dd-MM-yyyy}", DateTime.Now);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -76,6 +79,11 @@ namespace QuanLy
         {
             tabControl.SelectedIndex = 3;
 
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = string.Format("{0:dd-MM-yyyy}", DateTime.Now);
         }
     }
 }
