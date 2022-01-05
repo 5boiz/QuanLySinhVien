@@ -8,14 +8,12 @@ using System.Windows.Forms;
 
 namespace QuanLy
 {
-   
+
     partial class Controller
     {
-        public bool IsUserNameExists(string UserName)
+        public bool IsUserIDExists(string ID)
         {
-            
-            return Static.mock.Data.users.Values.ToList().Find(u => u.TenTaiKhoan == UserName) != null;
-            
+            return Static.mock.Data.users.Values.ToList().Find(u => u.ID == ID) != null;
         }
     }
 }

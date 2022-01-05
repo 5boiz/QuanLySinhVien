@@ -83,10 +83,13 @@ namespace QuanLy
             this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem21 = new DevComponents.DotNetBar.ButtonItem();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             this.tabControl.SuspendLayout();
+            this.tabPageHome.SuspendLayout();
             this.SuspendLayout();
             // 
             // office2007StartButton1
@@ -489,6 +492,7 @@ namespace QuanLy
             // tabPageHome
             // 
             this.tabPageHome.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tabPageHome.Controls.Add(this.lblTime);
             this.tabPageHome.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPageHome.Location = new System.Drawing.Point(4, 25);
             this.tabPageHome.Name = "tabPageHome";
@@ -617,6 +621,23 @@ namespace QuanLy
             this.buttonItem21.SubItemsExpandWidth = 14;
             this.buttonItem21.Text = "<div width=\"70\" align=\"center\">Sinh viên</div>";
             // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(843, 327);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(129, 34);
+            this.lblTime.TabIndex = 2;
+            this.lblTime.Text = "Thời gian";
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -633,6 +654,8 @@ namespace QuanLy
             this.ribbonPanel2.ResumeLayout(false);
             this.ribbonPanel1.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
+            this.tabPageHome.ResumeLayout(false);
+            this.tabPageHome.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -691,6 +714,8 @@ namespace QuanLy
         private System.Windows.Forms.TabPage tabPageStudent;
         private System.Windows.Forms.TabPage tabPageHome;
         private System.Windows.Forms.TabPage tabPageTeacher;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
